@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./Deploy/"
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}
