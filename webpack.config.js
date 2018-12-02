@@ -2,7 +2,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: path.join(__dirname, 'Source','index.tsx'),
+    entry: path.join(__dirname, 'source','index.tsx'),
     mode: "development",
     module: {
         rules: [
@@ -38,12 +38,12 @@ module.exports = {
         extensions: ['.tsx', '.ts', '.js']
     },
     output: {
-        path: path.resolve(__dirname, 'Deploy'),
+        path: path.resolve(__dirname, 'deploy'),
         filename: "main.js",
         publicPath: '/'
     },
     devServer: {
-        contentBase: path.join(__dirname, 'Deploy'),
+        contentBase: path.join(__dirname, 'deploy'),
         port: 9000,
         historyApiFallback: true
     },

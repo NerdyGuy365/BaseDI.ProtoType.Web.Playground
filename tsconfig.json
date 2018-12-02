@@ -6,7 +6,7 @@
     "strict": true,
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
-    "outDir": "./Deploy/"
+    "outDir": "./deploy/"
   },
   "exclude": [
     "node_modules",
