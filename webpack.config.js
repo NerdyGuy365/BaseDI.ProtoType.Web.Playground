@@ -2,7 +2,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: path.join(__dirname, 'source','index.tsx'),
+    entry: path.join(__dirname, 'source','Index.tsx'),
     mode: "development",
     module: {
         rules: [
