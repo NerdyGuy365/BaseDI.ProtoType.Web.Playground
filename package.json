@@ -2,11 +2,11 @@
   "name": "playground",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "source/index.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-dev": "webpack --mode=development ./source/index.tsx --output ./deploy/main.js --watch",
-    "build-sandbox": "webpack --mode=production ./source/index.tsx --output ./deploy/main.js",
+    "build-sandbox": "webpack --mode=production",
     "build": "react-scripts build",
     "start-dev": "webpack-dev-server"
   },
@@ -42,7 +42,7 @@
     "typescript": "^3.1.6",
     "url-loader": "^1.1.2",
     "webpack": "^4.26.1",
-    "webpack-cli": "^3.1.2",
+    "webpack-cli":"3.1.2"
     "write-file-webpack-plugin": "^4.4.1",
     "yargs": "^12.0.2"
   },
