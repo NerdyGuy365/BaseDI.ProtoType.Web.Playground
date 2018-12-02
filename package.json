@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-dev": "webpack --mode development ./source/index.tsx --output ./deploy/main.js --watch",
-    "build-sandbox": "webpack --mode production ./source/index.tsx --output ./deploy/main.js",
+    "build-dev": "webpack --mode=development ./source/index.tsx --output ./deploy/main.js --watch",
+    "build-sandbox": "webpack --mode=production ./source/index.tsx --output ./deploy/main.js",
     "build": "react-scripts build",
     "start-dev": "webpack-dev-server"
   },
