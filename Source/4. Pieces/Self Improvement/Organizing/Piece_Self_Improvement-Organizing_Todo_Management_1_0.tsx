@@ -7,22 +7,17 @@ import axios from 'axios';
 //IMPORT APPLICATION STYLES
 
 //IMPORT APPLICATION CONTENT
-import '../../../Content/Internet and Businesses Online/Web Design/Web Design - Alien Loader, Web Development - 1.0.gif';
+import '../../../6. Content/Internet and Businesses Online/Web Design/Web Design - Alien Loader, Web Development - 1.0.gif';
 
 //IMPORT APPLICATION COMPONENTS
-import { Global } from '../../../Global';
+import { Global, IGlobalContainerProps, IGlobalHeaderProps, IGlobalBodyProps, IGlobalFooterProps } from '../../../Global';
 
 //BEGIN CONTAINER - 1-1
-interface IContainerProps
-{
-    DomainName:string
-}
-
-class Container_1_1 extends React.Component<IContainerProps, any>{
+class Container_1_1 extends React.Component<IGlobalContainerProps, any>{
     ///////////////////////////////////////////////////////
     //Class Setup
     ///////////////////////////////////////////////////////
-    constructor(props: IContainerProps)
+    constructor(props: IGlobalContainerProps)
     {
         super(props);
         
@@ -79,7 +74,8 @@ class Container_1_1 extends React.Component<IContainerProps, any>{
 
         this.PlaceHolder_Helper_Events_Helper_SetDisplayNotification("Todo deleted successfully!");
     }
-    async Button_Mouse_Events_OnClick_UpdateTodoComplete() {
+    async Button_Mouse_Events_OnClick_UpdateTodoComplete() 
+    {
         const updateTodo = this.state.todos[this.state.isUpdatingIndex];
 
         updateTodo.name = this.state.newTodo;
@@ -250,11 +246,11 @@ const Header_1_2 = (props:IHeaderProps) => {
     //COMPONENT CONTENT
     return (
         <div id="Data_FormsView_1_0_1_Standard_Div_1-1-2" className="container">
-            <div id="Data_FormsView_1_0_1_Standard_Div_1-1-2-1">
-                <div id="Data_FormsView_1_0_1_Standard_Div_1-1-2-1-1">
-                    <div id="Data_FormsView_1_0_1_Standard_Div_1-1-2-1-1-1-1">
-                        <header className="App-header" id="Data_FormsView_1_0_1_Standard_Div_1-1-2-1-1-1-1-1">
-                            <h1 className="App-title text-center" id="Data_FormsView_1_0_1_Standard_Div_1-1-2-1-1-1-1-2">Organize Your Life - My Todo List</h1>
+            <div id="Data_FormsView_1_0_1_Standard_Div_1-1-2-1" className="row">
+                <div id="Data_FormsView_1_0_1_Standard_Div_1-1-2-1-1" className="col">
+                    <div id="Data_FormsView_1_0_1_Standard_Div_1-1-2-1-1-1-1" className="container">
+                        <header id="Data_FormsView_1_0_1_Standard_Div_1-1-2-1-1-1-1-1" className="App-header">
+                            <h1 id="Data_FormsView_1_0_1_Standard_Div_1-1-2-1-1-1-1-2" className="App-title text-center">Organize Your Life - My Todo List</h1>
                         </header>
                         <input
                             id="Data_FormsView_1_0_1_Standard_Div_1-1-2-1-1-1-1-3"
@@ -330,9 +326,9 @@ const Body_1_3 = (props: IBodyProps) => {
     ///////////////////////////////////////////////////////
     return (
         <div id="Data_FormsView_1_0_1_Standard_Div_1-1-3" className="container">  
-            <div id="Data_FormsView_1_0_1_Standard_Div_1-1-3-1">
-                <div id="Data_FormsView_1_0_1_Standard_Div_1-1-3-1-1">
-                    <div id="Data_FormsView_1_0_1_Standard_Div_1-1-3-1-1-1-1">
+            <div id="Data_FormsView_1_0_1_Standard_Div_1-1-3-1" className="row">
+                <div id="Data_FormsView_1_0_1_Standard_Div_1-1-3-1-1" className="col">
+                    <div id="Data_FormsView_1_0_1_Standard_Div_1-1-3-1-1-1-1" className="container">
                         {
                             props.PlaceHolder_Helper_Events_Helper_DisplayLoader() &&
                             <img src="images/Web Design - Alien Loader, Web Development - 1.0.gif" alt="" id="Data_FormsView_1_0_1_Standard_Div_1-1-3-1-1-1-1-1" />
@@ -396,9 +392,9 @@ const Footer_1_4 = (props: IFooterProps) => {
     ///////////////////////////////////////////////////////
     return(
         <div id="Data_FormsView_1_0_1_Standard_Div_1-1-4" className="container">
-            <div id="Data_FormsView_1_0_1_Standard_Div_1-1-4-1">
-                <div id="Data_FormsView_1_0_1_Standard_Div_1-1-4-1-1">
-                    <div id="Data_FormsView_1_0_1_Standard_Div_1-1-4-1-1-1-1">
+            <div id="Data_FormsView_1_0_1_Standard_Div_1-1-4-1" className="row">
+                <div id="Data_FormsView_1_0_1_Standard_Div_1-1-4-1-1" className="col">
+                    <div id="Data_FormsView_1_0_1_Standard_Div_1-1-4-1-1-1-1" className="container">
                     </div>
                 </div>
             </div>

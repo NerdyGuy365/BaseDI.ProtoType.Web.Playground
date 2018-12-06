@@ -45,3 +45,178 @@ export {
     Global
 }
 //END GLOBAL - 0-0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//EXPORT APPLICATIONS
+//export { default as Application_Internet_And_Businesses_Online_Blogging_Test_BlogApplication_1_0 } from './1. Applications/Internet and Businesses Online/Blogging/Application_Internet_And_Businesses_Online-Blogging_Test_BlogApplication_1_0'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//EXPORT SCREENS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//EXPORT TEMPLATES
+//export { default as Template_Internet_And_Businesses_Online_Blogging_Test_Blog_About_1_0 } from './3. Templates/Internet and Businesses Online/Blogging/Template_Internet_And_Businesses_Online-Blogging_Test_Blog_About_1_0';
+//export { default as Template_Internet_And_Businesses_Online_Blogging_Test_Blog_Contact_1_0 } from './3. Templates/Internet and Businesses Online/Blogging/Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Contact_1_0';
+//export { default as Template_Internet_And_Businesses_Online_Blogging_Test_Blog_Home_1_0 } from './3. Templates/Internet and Businesses Online/Blogging/Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Home_1_0';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//EXPORT PIECES
+//export { default as Piece_Internet_And_Businesses_Online_Site_Promotion_Blogging_Test_Navigation_Menu_1_0 } from './4. Pieces/Internet and Businesses Online/Site Promotion/Piece_Internet_And_Businesses_Online-Site_Promotion_Blogging_Test_Navigation_Menu_1_0';
+//export { default as Piece_Internet_And_Businesses_Online_Site_Promotion_Test_Navigation_Menu_1_0 } from './4. Pieces/Internet and Businesses Online/Site Promotion/Piece_Internet_And_Businesses_Online-Site_Promotion_Test_Navigation_Menu_1_0';
+//export { default as Piece_Self_Improvement_Organizing_Todo_Management_1_0 } from './4. Pieces/Self Improvement/Organizing/Piece_Self_Improvement-Organizing_Todo_Management_1_0';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//BEGIN GLOBAL INTERFACES
+interface IGlobalContainerProps {
+    ApplicationName?:string,
+    NavigationLinks?: { name: string, link: string, renderID: string }[],
+    RenderID?:string,
+    RouteID?:string
+}
+
+export {
+    IGlobalContainerProps
+}
+
+interface IGlobalHeaderProps {
+    ApplicationName?:string,
+    NavigationLinks?: { name: string, link: string, renderID: string }[],
+    RenderID?:string,
+    RouteID?:string
+}
+
+export {
+    IGlobalHeaderProps
+}
+
+interface IGlobalBodyProps {
+    ApplicationName?:string,
+    NavigationLinks?: { name: string, link: string, renderID: string }[],
+    RenderID?:string,
+    RouteID?:string
+}
+
+export {
+    IGlobalBodyProps
+}
+
+interface IGlobalFooterProps {
+    ApplicationName?:string,
+    NavigationLinks?: { name: string, link: string, renderID: string }[],
+    RenderID?:string,
+    RouteID?:string
+}
+
+export {
+    IGlobalFooterProps
+}
+//END GLOBAL INTERFACES
+
