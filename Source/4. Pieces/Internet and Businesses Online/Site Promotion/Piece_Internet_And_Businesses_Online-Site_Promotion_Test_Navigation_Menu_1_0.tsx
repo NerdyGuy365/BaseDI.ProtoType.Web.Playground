@@ -81,8 +81,8 @@ const Body_1_3 = (props: IGlobalBodyProps) => {
                 <ul>
                     {props.NavigationLinks != undefined && props.NavigationLinks.map((item: { name: string, link: string, renderID: string }, index: number) => {
                         return <li key={index}>
-                                <Link to={item.link}>{item.name}</Link>
-                            </li>
+                                    <Link to={item.link}>{item.name}</Link>
+                                </li>
                     })}
                 </ul>
                 {props.NavigationLinks != undefined && props.NavigationLinks.map((item: { name: string, link: string, renderID: string }, index: number) => {
