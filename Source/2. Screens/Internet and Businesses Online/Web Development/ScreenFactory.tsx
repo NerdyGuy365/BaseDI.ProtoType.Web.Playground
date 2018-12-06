@@ -5,7 +5,6 @@ import { default as Screen_Internet_And_Businesses_Online_Blogging_Test_Blog_Abo
 import { default as Screen_Internet_And_Businesses_Online_Blogging_Test_Blog_Contact_1_0 } from '../../../2. Screens/Internet and Businesses Online/Blogging/Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_Contact_1_0';
 
 //DECLARE FACTORY METHOD
-const ScreenDefaults = new Map();
 const Screen = (props: IGlobalContainerProps): any => {
     switch (props.RenderID != undefined && props.RenderID != null && props.RenderID.toLowerCase())
     {
@@ -24,6 +23,5 @@ const ScreenFactory = (props: IGlobalContainerProps): any => {
 
 export default ScreenFactory;
 
-export { ScreenDefaults }
 
 

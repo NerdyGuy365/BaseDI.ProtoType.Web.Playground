@@ -39059,9 +39059,6 @@ const Screen_Internet_And_Businesses_Online_Blogging_Test_Blog_About_1_0_1 = __w
 const Screen_Internet_And_Businesses_Online_Blogging_Test_Blog_Contact_1_0_1 = __webpack_require__(/*! ../../../2. Screens/Internet and Businesses Online/Blogging/Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_Contact_1_0 */ "./source/2. Screens/Internet and Businesses Online/Blogging/Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_Contact_1_0.tsx"); //DECLARE FACTORY METHOD
 
 
-const ScreenDefaults = new Map();
-exports.ScreenDefaults = ScreenDefaults;
-
 const Screen = props => {
   switch (props.RenderID != undefined && props.RenderID != null && props.RenderID.toLowerCase()) {
     case "screen_internet_and_businesses_online-blogging_test_blog_home_1_0":
