@@ -39167,7 +39167,7 @@ const Container_1_1 = props => {
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-1"
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-1"
   }, React.createElement(Header_1_2, null), React.createElement(Body_1_3, null), React.createElement(Footer_1_4, null));
 };
 
@@ -39178,13 +39178,13 @@ const Header_1_2 = props => {
   const pieceMenuRenderID = "Piece_Internet_And_Businesses_Online_Site_Promotion_Blogging_Test_Navigation_Menu_1_0"; //COMPONENT CONTENT
 
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-2",
     className: "container-fluid"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-2-1",
     className: "row"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1-1",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-2-1-1",
     className: "col"
   }, React.createElement("p", null, "About Template Header"))));
 }; //END HEADER - 1-2
@@ -39196,13 +39196,13 @@ const Body_1_3 = props => {
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-3",
     className: "container-fluid"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3-1",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-3-1",
     className: "row"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3-1-1",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-3-1-1",
     className: "col"
   }, React.createElement("p", null, "About Template Body"))));
 }; //END BODY - 1-3
@@ -39214,13 +39214,13 @@ const Footer_1_4 = props => {
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-4",
     className: "container-fluid"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4-1",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-4-1",
     className: "row"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4-1-1",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-4-1-1",
     className: "col"
   }, React.createElement("p", null, "About Template Footer"))));
 }; //END FOOTER - 1-4
@@ -39249,7 +39249,7 @@ const Container_1_1 = props => {
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-1"
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-1"
   }, React.createElement(Header_1_2, null), React.createElement(Body_1_3, null), React.createElement(Footer_1_4, null));
 };
 
@@ -39260,13 +39260,13 @@ const Header_1_2 = props => {
   const pieceMenuRenderID = "Piece_Internet_And_Businesses_Online_Site_Promotion_Blogging_Test_Navigation_Menu_1_0"; //COMPONENT CONTENT
 
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-2",
     className: "container-fluid"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-2-1",
     className: "row"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1-1",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-2-1-1",
     className: "col"
   }, React.createElement("p", null, "Contact Template Header"))));
 }; //END HEADER - 1-2
@@ -39278,13 +39278,13 @@ const Body_1_3 = props => {
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-3",
     className: "container-fluid"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3-1",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-3-1",
     className: "row"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3-1-1",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-3-1-1",
     className: "col"
   }, React.createElement("p", null, "Contact Template Body"))));
 }; //END BODY - 1-3
@@ -39296,13 +39296,13 @@ const Footer_1_4 = props => {
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-4",
     className: "container-fluid"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4-1",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-4-1",
     className: "row"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4-1-1",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-4-1-1",
     className: "col"
   }, React.createElement("p", null, "Contact Template Footer"))));
 }; //END FOOTER - 1-4
@@ -39331,7 +39331,7 @@ const Container_1_1 = props => {
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-1"
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-1"
   }, React.createElement(Header_1_2, {
     ApplicationName: props.ApplicationName,
     NavigationLinks: props.NavigationLinks,
@@ -39358,13 +39358,13 @@ const Header_1_2 = props => {
   console.log("Template Called"); //COMPONENT CONTENT
 
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-2",
     className: "container-fluid"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-2-1",
     className: "row"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1-1",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-2-1-1",
     className: "col"
   })));
 }; //END HEADER - 1-2
@@ -39376,13 +39376,13 @@ const Body_1_3 = props => {
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-3",
     className: "container-fluid"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3-1",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-3-1",
     className: "row"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3-1-1",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-3-1-1",
     className: "col"
   }, React.createElement("p", null, "Home Template Body"))));
 }; //END BODY - 1-3
@@ -39394,13 +39394,13 @@ const Footer_1_4 = props => {
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-4",
     className: "container-fluid"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4-1",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-4-1",
     className: "row"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4-1-1",
+    id: "Standard_PlaceHolder_1_0_1_Standard_Div_1-1-4-1-1",
     className: "col"
   }, React.createElement("p", null, "Home Template Footer"))));
 }; //END FOOTER - 1-4

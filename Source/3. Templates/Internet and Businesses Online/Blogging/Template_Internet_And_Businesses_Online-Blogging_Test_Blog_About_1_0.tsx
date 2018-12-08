@@ -16,7 +16,7 @@ const Container_1_1 = (props: IGlobalContainerProps) => {
     //COMPONENT CONTENT
     ///////////////////////////////////////////////////////
     return (
-        <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-1">
+        <div id="Standard_PlaceHolder_1_0_1_Standard_Div_1-1-1">
             <Header_1_2
             />
 
@@ -55,9 +55,9 @@ const Header_1_2 = (props: IGlobalHeaderProps) => {
 
     //COMPONENT CONTENT
     return (
-        <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2" className="container-fluid">
-            <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1" className="row">
-                <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1-1" className="col">
+        <div id="Standard_PlaceHolder_1_0_1_Standard_Div_1-1-2" className="container-fluid">
+            <div id="Standard_PlaceHolder_1_0_1_Standard_Div_1-1-2-1" className="row">
+                <div id="Standard_PlaceHolder_1_0_1_Standard_Div_1-1-2-1-1" className="col">
                     <p>About Template Header</p>
                 </div>
             </div>
@@ -94,9 +94,9 @@ const Body_1_3 = (props: IGlobalBodyProps) => {
     //COMPONENT CONTENT
     ///////////////////////////////////////////////////////
     return (
-        <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3" className="container-fluid">
-            <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3-1" className="row">
-                <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3-1-1" className="col">
+        <div id="Standard_PlaceHolder_1_0_1_Standard_Div_1-1-3" className="container-fluid">
+            <div id="Standard_PlaceHolder_1_0_1_Standard_Div_1-1-3-1" className="row">
+                <div id="Standard_PlaceHolder_1_0_1_Standard_Div_1-1-3-1-1" className="col">
                     <p>About Template Body</p>
                 </div>
             </div>
@@ -134,9 +134,9 @@ const Footer_1_4 = (props: IGlobalFooterProps) => {
     //COMPONENT CONTENT
     ///////////////////////////////////////////////////////
     return (
-        <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4" className="container-fluid">
-            <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4-1" className="row">
-                <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4-1-1" className="col">
+        <div id="Standard_PlaceHolder_1_0_1_Standard_Div_1-1-4" className="container-fluid">
+            <div id="Standard_PlaceHolder_1_0_1_Standard_Div_1-1-4-1" className="row">
+                <div id="Standard_PlaceHolder_1_0_1_Standard_Div_1-1-4-1-1" className="col">
                     <p>About Template Footer</p>
                 </div>
             </div>
