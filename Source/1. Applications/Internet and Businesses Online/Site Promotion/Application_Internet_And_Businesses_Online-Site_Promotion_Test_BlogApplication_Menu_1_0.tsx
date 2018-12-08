@@ -18,7 +18,7 @@ const Container_1_1 = (props: IGlobalContainerProps) => {
     //COMPONENT CONTENT
     ///////////////////////////////////////////////////////
     return (
-        <div id="InternetAndBusinessesOnline_SitePromotion_1_0_1_Standard_Div_1-1-1">
+        <div id="Navigation_Menu_1_0_1_Standard_Div_1-1-1">
             <Body_1_3 
                 ApplicationName={props.ApplicationName} 
                 NavigationLinks={props.NavigationLinks}
