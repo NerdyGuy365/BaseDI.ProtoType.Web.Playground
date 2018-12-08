@@ -38654,9 +38654,7 @@ Object.defineProperty(exports, "__esModule", {
 
 const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
-const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
-
-const ScreenFactory_1 = __webpack_require__(/*! ../../../2. Screens/Internet and Businesses Online/Web Development/ScreenFactory */ "./source/2. Screens/Internet and Businesses Online/Web Development/ScreenFactory.tsx"); //BEGIN CONTAINER - 1-1
+const ApplicationFactory_1 = __webpack_require__(/*! ../../../1. Applications/Internet and Businesses Online/Web Development/ApplicationFactory */ "./source/1. Applications/Internet and Businesses Online/Web Development/ApplicationFactory.tsx"); //BEGIN CONTAINER - 1-1
 
 
 class Container_1_1 extends React.Component {
@@ -38690,7 +38688,7 @@ class Container_1_1 extends React.Component {
     }; //WIRE EVENTS
     //SET DEFAULTS        
 
-    this.startUpScreen = "Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_Home_1_0";
+    this.startUpComponent = "Application_Internet_And_Businesses_Online-Site_Promotion_Test_BlogApplication_Menu_1_0";
   } ///////////////////////////////////////////////////////
   //ReactJS Proprietary 
   ///////////////////////////////////////////////////////
@@ -38711,33 +38709,79 @@ class Container_1_1 extends React.Component {
 
 
   render() {
-    return React.createElement(react_router_dom_1.BrowserRouter, null, React.createElement("div", null, React.createElement("ul", null, React.createElement("li", null, React.createElement(react_router_dom_1.Link, {
-      to: "/"
-    }, "Home")), React.createElement("li", null, React.createElement(react_router_dom_1.Link, {
-      to: "/About"
-    }, "About"))), React.createElement(react_router_dom_1.Route, {
-      exact: true,
-      path: "/",
-      render: () => React.createElement(ScreenFactory_1.default, {
-        ApplicationName: this.props.ApplicationName,
-        NavigationLinks: this.state.NavigationLinks,
-        RenderID: "Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_Home_1_0",
-        RouteID: this.props.RouteID
-      })
-    }), React.createElement(react_router_dom_1.Route, {
-      path: "/About",
-      render: () => React.createElement(ScreenFactory_1.default, {
-        ApplicationName: this.props.ApplicationName,
-        NavigationLinks: this.state.NavigationLinks,
-        RenderID: "Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_About_1_0",
-        RouteID: this.props.RouteID
-      })
-    })));
+    return React.createElement(ApplicationFactory_1.default, {
+      ApplicationName: this.startUpComponent,
+      NavigationLinks: this.state.NavigationLinks
+    });
   }
 
 }
 
 exports.default = Container_1_1; //END CONTAINER - 1-1
+
+/***/ }),
+
+/***/ "./source/1. Applications/Internet and Businesses Online/Site Promotion/Application_Internet_And_Businesses_Online-Site_Promotion_Test_BlogApplication_Menu_1_0.tsx":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./source/1. Applications/Internet and Businesses Online/Site Promotion/Application_Internet_And_Businesses_Online-Site_Promotion_Test_BlogApplication_Menu_1_0.tsx ***!
+  \**************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}); //IMPORT REACT STUFF
+
+const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+
+const ScreenFactory_1 = __webpack_require__(/*! ../../../2. Screens/Internet and Businesses Online/Web Development/ScreenFactory */ "./source/2. Screens/Internet and Businesses Online/Web Development/ScreenFactory.tsx"); //BEGIN CONTAINER - 1-1
+
+
+const Container_1_1 = props => {
+  ///////////////////////////////////////////////////////
+  //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  return React.createElement("div", {
+    id: "InternetAndBusinessesOnline_SitePromotion_1_0_1_Standard_Div_1-1-1"
+  }, React.createElement(Body_1_3, {
+    ApplicationName: props.ApplicationName,
+    NavigationLinks: props.NavigationLinks,
+    RenderID: props.RenderID
+  }));
+};
+
+exports.default = Container_1_1; //END CONTAINER - 1-1
+//BEGIN BODY - 1-3
+
+const Body_1_3 = props => {
+  ///////////////////////////////////////////////////////
+  //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  return React.createElement(react_router_dom_1.BrowserRouter, null, React.createElement("div", null, React.createElement("ul", null, props.NavigationLinks != undefined && props.NavigationLinks.map((item, index) => {
+    return React.createElement("li", {
+      key: index
+    }, React.createElement(react_router_dom_1.Link, {
+      to: item.link
+    }, item.name));
+  })), props.NavigationLinks != undefined && props.NavigationLinks.map((item, index) => {
+    return React.createElement(react_router_dom_1.Route, {
+      key: index,
+      exact: true,
+      path: item.link,
+      render: () => React.createElement(ScreenFactory_1.default, {
+        ApplicationName: props.ApplicationName,
+        NavigationLinks: props.NavigationLinks,
+        RenderID: item.renderID,
+        RouteID: props.RouteID
+      })
+    });
+  })));
+}; //END BODY - 1-3
 
 /***/ }),
 
@@ -38755,13 +38799,18 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-const Application_Internet_And_Businesses_Online_Blogging_Test_BlogApplication_1_0_1 = __webpack_require__(/*! ../Blogging/Application_Internet_And_Businesses_Online-Blogging_Test_BlogApplication_1_0 */ "./source/1. Applications/Internet and Businesses Online/Blogging/Application_Internet_And_Businesses_Online-Blogging_Test_BlogApplication_1_0.tsx"); //DECLARE FACTORY METHOD
+const Application_Internet_And_Businesses_Online_Blogging_Test_BlogApplication_1_0_1 = __webpack_require__(/*! ../Blogging/Application_Internet_And_Businesses_Online-Blogging_Test_BlogApplication_1_0 */ "./source/1. Applications/Internet and Businesses Online/Blogging/Application_Internet_And_Businesses_Online-Blogging_Test_BlogApplication_1_0.tsx");
+
+const Application_Internet_And_Businesses_Online_Site_Promotion_Test_BlogApplication_Menu_1_0_1 = __webpack_require__(/*! ../Site Promotion/Application_Internet_And_Businesses_Online-Site_Promotion_Test_BlogApplication_Menu_1_0 */ "./source/1. Applications/Internet and Businesses Online/Site Promotion/Application_Internet_And_Businesses_Online-Site_Promotion_Test_BlogApplication_Menu_1_0.tsx"); //DECLARE FACTORY METHOD
 
 
 const Application = props => {
   switch (props.ApplicationName != undefined && props.ApplicationName != null && props.ApplicationName.toLowerCase()) {
     case "application_internet_and_businesses_online-blogging_test_blogapplication_1_0":
       return new Application_Internet_And_Businesses_Online_Blogging_Test_BlogApplication_1_0_1.default(props);
+
+    case "application_internet_and_businesses_online-site_promotion_test_blogapplication_menu_1_0":
+      return Application_Internet_And_Businesses_Online_Site_Promotion_Test_BlogApplication_Menu_1_0_1.default(props);
   }
 };
 
@@ -38850,7 +38899,97 @@ class Container_1_1 extends React.Component {
 
 
   render() {
-    console.log("Screen fired About");
+    return React.createElement(TemplateFactory_1.default, {
+      ApplicationName: this.props.ApplicationName,
+      NavigationLinks: this.state.NavigationLinks,
+      RenderID: this.screenTemplate,
+      RouteID: this.props.RouteID
+    });
+  }
+
+}
+
+exports.default = Container_1_1; //END CONTAINER - 1-1
+
+/***/ }),
+
+/***/ "./source/2. Screens/Internet and Businesses Online/Blogging/Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_Contact_1_0.tsx":
+/*!********************************************************************************************************************************************!*\
+  !*** ./source/2. Screens/Internet and Businesses Online/Blogging/Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_Contact_1_0.tsx ***!
+  \********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __awaiter = this && this.__awaiter || function (thisArg, _arguments, P, generator) {
+  return new (P || (P = Promise))(function (resolve, reject) {
+    function fulfilled(value) {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    }
+
+    function rejected(value) {
+      try {
+        step(generator["throw"](value));
+      } catch (e) {
+        reject(e);
+      }
+    }
+
+    function step(result) {
+      result.done ? resolve(result.value) : new P(function (resolve) {
+        resolve(result.value);
+      }).then(fulfilled, rejected);
+    }
+
+    step((generator = generator.apply(thisArg, _arguments || [])).next());
+  });
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}); //IMPORT REACT STUFF
+
+const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+const TemplateFactory_1 = __webpack_require__(/*! ../../../3. Templates/Internet and Businesses Online/Web Development/TemplateFactory */ "./source/3. Templates/Internet and Businesses Online/Web Development/TemplateFactory.tsx"); //BEGIN CONTAINER - 1-1
+
+
+class Container_1_1 extends React.Component {
+  ///////////////////////////////////////////////////////
+  //Class Setup
+  ///////////////////////////////////////////////////////
+  constructor(props) {
+    super(props);
+    this.state = {}; //WIRE EVENTS
+    //SET DEFAULTS
+
+    this.screenTemplate = "Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Contact_1_0";
+  } ///////////////////////////////////////////////////////
+  //ReactJS Proprietary 
+  ///////////////////////////////////////////////////////
+
+
+  componentDidMount() {
+    return __awaiter(this, void 0, void 0, function* () {//const response = await axios.get(`${Global().APIMockUrl}/APIVERB`);
+      //setTimeout(() => {
+      //    this.setState({
+      //        todos: response.data,
+      //        loading: false
+      //    })
+      //}, 1500)
+    });
+  } ///////////////////////////////////////////////////////
+  //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+
+
+  render() {
     return React.createElement(TemplateFactory_1.default, {
       ApplicationName: this.props.ApplicationName,
       NavigationLinks: this.state.NavigationLinks,
@@ -38942,10 +39081,9 @@ class Container_1_1 extends React.Component {
 
 
   render() {
-    console.log("Screen fired Home");
     return React.createElement(TemplateFactory_1.default, {
       ApplicationName: this.props.ApplicationName,
-      NavigationLinks: this.state.NavigationLinks,
+      NavigationLinks: this.props.NavigationLinks,
       RenderID: this.screenTemplate,
       RouteID: this.props.RouteID
     });
@@ -38973,12 +39111,10 @@ Object.defineProperty(exports, "__esModule", {
 
 const Screen_Internet_And_Businesses_Online_Blogging_Test_Blog_Home_1_0_1 = __webpack_require__(/*! ../../../2. Screens/Internet and Businesses Online/Blogging/Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_Home_1_0 */ "./source/2. Screens/Internet and Businesses Online/Blogging/Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_Home_1_0.tsx");
 
-const Screen_Internet_And_Businesses_Online_Blogging_Test_Blog_About_1_0_1 = __webpack_require__(/*! ../../../2. Screens/Internet and Businesses Online/Blogging/Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_About_1_0 */ "./source/2. Screens/Internet and Businesses Online/Blogging/Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_About_1_0.tsx"); //import { default as Screen_Internet_And_Businesses_Online_Blogging_Test_Blog_Contact_1_0 } from '../../../2. Screens/Internet and Businesses Online/Blogging/Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_Contact_1_0';
-//DECLARE FACTORY METHOD
+const Screen_Internet_And_Businesses_Online_Blogging_Test_Blog_About_1_0_1 = __webpack_require__(/*! ../../../2. Screens/Internet and Businesses Online/Blogging/Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_About_1_0 */ "./source/2. Screens/Internet and Businesses Online/Blogging/Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_About_1_0.tsx");
 
+const Screen_Internet_And_Businesses_Online_Blogging_Test_Blog_Contact_1_0_1 = __webpack_require__(/*! ../../../2. Screens/Internet and Businesses Online/Blogging/Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_Contact_1_0 */ "./source/2. Screens/Internet and Businesses Online/Blogging/Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_Contact_1_0.tsx"); //DECLARE FACTORY METHOD
 
-const ScreenDefaults = new Map();
-exports.ScreenDefaults = ScreenDefaults;
 
 const Screen = props => {
   switch (props.RenderID != undefined && props.RenderID != null && props.RenderID.toLowerCase()) {
@@ -38987,6 +39123,9 @@ const Screen = props => {
 
     case "screen_internet_and_businesses_online-blogging_test_blog_about_1_0":
       return new Screen_Internet_And_Businesses_Online_Blogging_Test_Blog_About_1_0_1.default(props);
+
+    case "screen_internet_and_businesses_online-blogging_test_blog_contact_1_0":
+      return new Screen_Internet_And_Businesses_Online_Blogging_Test_Blog_Contact_1_0_1.default(props);
   }
 };
 
@@ -39080,10 +39219,10 @@ const Footer_1_4 = props => {
 
 /***/ }),
 
-/***/ "./source/3. Templates/Internet and Businesses Online/Blogging/Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Home_1_0.tsx":
-/*!*********************************************************************************************************************************************!*\
-  !*** ./source/3. Templates/Internet and Businesses Online/Blogging/Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Home_1_0.tsx ***!
-  \*********************************************************************************************************************************************/
+/***/ "./source/3. Templates/Internet and Businesses Online/Blogging/Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Contact_1_0.tsx":
+/*!************************************************************************************************************************************************!*\
+  !*** ./source/3. Templates/Internet and Businesses Online/Blogging/Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Contact_1_0.tsx ***!
+  \************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -39121,7 +39260,105 @@ const Header_1_2 = props => {
   }, React.createElement("div", {
     id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1-1",
     className: "col"
-  }, React.createElement("p", null, "Home Template Header"))));
+  }, React.createElement("p", null, "Contact Template Header"))));
+}; //END HEADER - 1-2
+//BEGIN BODY - 1-3
+
+
+const Body_1_3 = props => {
+  ///////////////////////////////////////////////////////
+  //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  return React.createElement("div", {
+    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3",
+    className: "container-fluid"
+  }, React.createElement("div", {
+    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3-1",
+    className: "row"
+  }, React.createElement("div", {
+    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3-1-1",
+    className: "col"
+  }, React.createElement("p", null, "Contact Template Body"))));
+}; //END BODY - 1-3
+//BEGIN FOOTER - 1-4
+
+
+const Footer_1_4 = props => {
+  ///////////////////////////////////////////////////////
+  //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  return React.createElement("div", {
+    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4",
+    className: "container-fluid"
+  }, React.createElement("div", {
+    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4-1",
+    className: "row"
+  }, React.createElement("div", {
+    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4-1-1",
+    className: "col"
+  }, React.createElement("p", null, "Contact Template Footer"))));
+}; //END FOOTER - 1-4
+
+/***/ }),
+
+/***/ "./source/3. Templates/Internet and Businesses Online/Blogging/Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Home_1_0.tsx":
+/*!*********************************************************************************************************************************************!*\
+  !*** ./source/3. Templates/Internet and Businesses Online/Blogging/Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Home_1_0.tsx ***!
+  \*********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}); //IMPORT REACT STUFF
+
+const React = __webpack_require__(/*! react */ "./node_modules/react/index.js"); //BEGIN CONTAINER - 1-1
+
+
+const Container_1_1 = props => {
+  ///////////////////////////////////////////////////////
+  //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  return React.createElement("div", {
+    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-1"
+  }, React.createElement(Header_1_2, {
+    ApplicationName: props.ApplicationName,
+    NavigationLinks: props.NavigationLinks,
+    RenderID: props.RenderID,
+    RouteID: props.RouteID
+  }), React.createElement(Body_1_3, {
+    ApplicationName: props.ApplicationName,
+    NavigationLinks: props.NavigationLinks,
+    RenderID: props.RenderID,
+    RouteID: props.RouteID
+  }), React.createElement(Footer_1_4, {
+    ApplicationName: props.ApplicationName,
+    NavigationLinks: props.NavigationLinks,
+    RenderID: props.RenderID,
+    RouteID: props.RouteID
+  }));
+};
+
+exports.default = Container_1_1; //END CONTAINER - 1-1
+//BEGIN HEADER - 1-2
+
+const Header_1_2 = props => {
+  const pieceMenuRenderID = "Piece_Internet_And_Businesses_Online-Site_Promotion_Test_Navigation_Menu_1_0";
+  console.log("Template Called"); //COMPONENT CONTENT
+
+  return React.createElement("div", {
+    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2",
+    className: "container-fluid"
+  }, React.createElement("div", {
+    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1",
+    className: "row"
+  }, React.createElement("div", {
+    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1-1",
+    className: "col"
+  })));
 }; //END HEADER - 1-2
 //BEGIN BODY - 1-3
 
@@ -39178,7 +39415,9 @@ Object.defineProperty(exports, "__esModule", {
 
 const Template_Internet_And_Businesses_Online_Blogging_Test_Blog_Home_1_0_1 = __webpack_require__(/*! ../../../3. Templates/Internet and Businesses Online/Blogging/Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Home_1_0 */ "./source/3. Templates/Internet and Businesses Online/Blogging/Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Home_1_0.tsx");
 
-const Template_Internet_And_Businesses_Online_Blogging_Test_Blog_About_1_0_1 = __webpack_require__(/*! ../../../3. Templates/Internet and Businesses Online/Blogging/Template_Internet_And_Businesses_Online-Blogging_Test_Blog_About_1_0 */ "./source/3. Templates/Internet and Businesses Online/Blogging/Template_Internet_And_Businesses_Online-Blogging_Test_Blog_About_1_0.tsx"); //DECLARE FACTORY METHOD
+const Template_Internet_And_Businesses_Online_Blogging_Test_Blog_About_1_0_1 = __webpack_require__(/*! ../../../3. Templates/Internet and Businesses Online/Blogging/Template_Internet_And_Businesses_Online-Blogging_Test_Blog_About_1_0 */ "./source/3. Templates/Internet and Businesses Online/Blogging/Template_Internet_And_Businesses_Online-Blogging_Test_Blog_About_1_0.tsx");
+
+const Template_Internet_And_Businesses_Online_Blogging_Test_Blog_Contact_1_0_1 = __webpack_require__(/*! ../../../3. Templates/Internet and Businesses Online/Blogging/Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Contact_1_0 */ "./source/3. Templates/Internet and Businesses Online/Blogging/Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Contact_1_0.tsx"); //DECLARE FACTORY METHOD
 
 
 const Template = props => {
@@ -39188,6 +39427,9 @@ const Template = props => {
 
     case "template_internet_and_businesses_online-blogging_test_blog_about_1_0":
       return Template_Internet_And_Businesses_Online_Blogging_Test_Blog_About_1_0_1.default(props);
+
+    case "template_internet_and_businesses_online-blogging_test_blog_contact_1_0":
+      return Template_Internet_And_Businesses_Online_Blogging_Test_Blog_Contact_1_0_1.default(props);
   }
 };
 

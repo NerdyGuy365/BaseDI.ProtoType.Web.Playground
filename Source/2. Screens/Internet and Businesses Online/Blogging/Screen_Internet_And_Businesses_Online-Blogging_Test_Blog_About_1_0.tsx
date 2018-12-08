@@ -1,6 +1,5 @@
 ﻿//IMPORT REACT STUFF
 import * as React from 'react';
-import { Link } from 'react-router-dom';
 
 //IMPORT EXTRA STUFF
 
@@ -48,7 +47,6 @@ class Container_1_1 extends React.Component<IGlobalContainerProps, any>{
     //COMPONENT CONTENT
     ///////////////////////////////////////////////////////
     render() {
-        console.log("Screen fired About");
         return (<TemplateFactory
             ApplicationName={this.props.ApplicationName}
             NavigationLinks={this.state.NavigationLinks}
