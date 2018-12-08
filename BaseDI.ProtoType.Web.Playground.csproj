@@ -38,7 +38,6 @@
     <None Remove="Source\3. Templates\Internet and Businesses Online\Blogging\Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Contact_1_0.tsx" />
     <None Remove="Source\3. Templates\Internet and Businesses Online\Blogging\Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Home_1_0.tsx" />
     <None Remove="Source\3. Templates\Internet and Businesses Online\Web Development\TemplateFactory.tsx" />
-    <None Remove="Source\4. Pieces\Internet and Businesses Online\Site Promotion\Piece_Internet_And_Businesses_Online-Site_Promotion_Test_Navigation_Menu_1_0.tsx" />
     <None Remove="Source\4. Pieces\Internet and Businesses Online\Web Development\PieceFactory.tsx" />
     <None Remove="Source\BaseDISnippet_TABLE.tsx" />
     <None Remove="Source\Global.tsx" />
@@ -48,6 +47,7 @@
 
   <ItemGroup>
     <Folder Include="Deploy\" />
+    <Folder Include="Source\4. Pieces\Internet and Businesses Online\Site Promotion\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -63,7 +63,6 @@
     <TypeScriptCompile Include="Source\3. Templates\Internet and Businesses Online\Blogging\Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Contact_1_0.tsx" />
     <TypeScriptCompile Include="Source\3. Templates\Internet and Businesses Online\Blogging\Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Home_1_0.tsx" />
     <TypeScriptCompile Include="Source\3. Templates\Internet and Businesses Online\Web Development\TemplateFactory.tsx" />
-    <TypeScriptCompile Include="Source\4. Pieces\Internet and Businesses Online\Site Promotion\Piece_Internet_And_Businesses_Online-Site_Promotion_Test_Navigation_Menu_1_0.tsx" />
     <TypeScriptCompile Include="Source\4. Pieces\Internet and Businesses Online\Web Development\PieceFactory.tsx" />
     <TypeScriptCompile Include="Source\Global.tsx" />
     <TypeScriptCompile Include="Source\Index.tsx" />
