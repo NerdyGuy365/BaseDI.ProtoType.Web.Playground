@@ -78,16 +78,18 @@ const Body_1_3 = (props: IGlobalBodyProps) => {
     ///////////////////////////////////////////////////////
     return (<BrowserRouter> 
         <div>       
-                <ul>
+            <div id="Navigation_Menu_1_0_1_Standard_Div_1-1-3" className="container-fluid mb-2">
+                <div id="Navigation_Menu_1_0_1_Standard_Div_1-1-3-1" className="row">
                     {props.NavigationLinks != undefined && props.NavigationLinks.map((item: { name: string, link: string, renderID: string }, index: number) => {
-                        return <li key={index}>
+                        return <div key={index} id="Navigation_Menu_1_0_1_Standard_Div_1-1-3-1-1" className="col-sm-1">
                                     <Link to={item.link}>{item.name}</Link>
-                                </li>
+                               </div>
                     })}
-                </ul>
-                {props.NavigationLinks != undefined && props.NavigationLinks.map((item: { name: string, link: string, renderID: string }, index: number) => {
-                    return <Route key={index} exact path={item.link} render={() => <ScreenFactory ApplicationName={props.ApplicationName} NavigationLinks={props.NavigationLinks} RenderID={item.renderID} RouteID={props.RouteID} />} />
-                })}
+                </div>
+            </div>
+            {props.NavigationLinks != undefined && props.NavigationLinks.map((item: { name: string, link: string, renderID: string }, index: number) => {
+                return <Route key={index} exact path={item.link} render={() => <ScreenFactory ApplicationName={props.ApplicationName} NavigationLinks={props.NavigationLinks} RenderID={item.renderID} RouteID={props.RouteID} />} />
+            })}
         </div>
         </BrowserRouter>)
 }

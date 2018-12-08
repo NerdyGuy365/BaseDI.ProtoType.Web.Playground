@@ -20,8 +20,15 @@
 
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Compile Remove="Source\4. Pieces\Internet and Businesses Online\Site Promotion\**" />
     <Content Remove="$(SpaRoot)**" />
+    <Content Remove="Source\4. Pieces\Internet and Businesses Online\Site Promotion\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Source\4. Pieces\Internet and Businesses Online\Site Promotion\**" />
+    <None Remove="Source\4. Pieces\Internet and Businesses Online\Site Promotion\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,7 +54,6 @@
 
   <ItemGroup>
     <Folder Include="Deploy\" />
-    <Folder Include="Source\4. Pieces\Internet and Businesses Online\Site Promotion\" />
   </ItemGroup>
 
   <ItemGroup>

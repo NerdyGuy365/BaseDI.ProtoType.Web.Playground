@@ -38762,13 +38762,21 @@ const Body_1_3 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
-  return React.createElement(react_router_dom_1.BrowserRouter, null, React.createElement("div", null, React.createElement("ul", null, props.NavigationLinks != undefined && props.NavigationLinks.map((item, index) => {
-    return React.createElement("li", {
-      key: index
+  return React.createElement(react_router_dom_1.BrowserRouter, null, React.createElement("div", null, React.createElement("div", {
+    id: "Navigation_Menu_1_0_1_Standard_Div_1-1-3",
+    className: "container-fluid mb-2"
+  }, React.createElement("div", {
+    id: "Navigation_Menu_1_0_1_Standard_Div_1-1-3-1",
+    className: "row"
+  }, props.NavigationLinks != undefined && props.NavigationLinks.map((item, index) => {
+    return React.createElement("div", {
+      key: index,
+      id: "Navigation_Menu_1_0_1_Standard_Div_1-1-3-1-1",
+      className: "col-sm-1"
     }, React.createElement(react_router_dom_1.Link, {
       to: item.link
     }, item.name));
-  })), props.NavigationLinks != undefined && props.NavigationLinks.map((item, index) => {
+  }))), props.NavigationLinks != undefined && props.NavigationLinks.map((item, index) => {
     return React.createElement(react_router_dom_1.Route, {
       key: index,
       exact: true,
