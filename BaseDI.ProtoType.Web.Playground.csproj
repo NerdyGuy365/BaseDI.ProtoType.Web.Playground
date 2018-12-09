@@ -46,6 +46,7 @@
     <None Remove="Source\3. Templates\Internet and Businesses Online\Blogging\Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Home_1_0.tsx" />
     <None Remove="Source\3. Templates\Internet and Businesses Online\Web Development\TemplateFactory.tsx" />
     <None Remove="Source\4. Pieces\Internet and Businesses Online\Web Development\PieceFactory.tsx" />
+    <None Remove="Source\7. Helpers\Internet and Businesses Online\Web Development\Snippet DIV Containers.tsx" />
     <None Remove="Source\BaseDISnippet_TABLE.tsx" />
     <None Remove="Source\Global.tsx" />
     <None Remove="Source\4. Pieces\Piece_Self_Improvement-Organizing_Todo_Management_1_0.tsx" />
@@ -70,6 +71,7 @@
     <TypeScriptCompile Include="Source\3. Templates\Internet and Businesses Online\Blogging\Template_Internet_And_Businesses_Online-Blogging_Test_Blog_Home_1_0.tsx" />
     <TypeScriptCompile Include="Source\3. Templates\Internet and Businesses Online\Web Development\TemplateFactory.tsx" />
     <TypeScriptCompile Include="Source\4. Pieces\Internet and Businesses Online\Web Development\PieceFactory.tsx" />
+    <TypeScriptCompile Include="Source\7. Helpers\Internet and Businesses Online\Web Development\Snippet DIV Containers.tsx" />
     <TypeScriptCompile Include="Source\Global.tsx" />
     <TypeScriptCompile Include="Source\Index.tsx" />
   </ItemGroup>

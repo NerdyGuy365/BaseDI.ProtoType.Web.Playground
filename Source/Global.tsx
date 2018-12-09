@@ -176,7 +176,8 @@ export {
 
 //BEGIN GLOBAL INTERFACES
 interface IGlobalContainerProps {
-    ApplicationName?:string,
+    ApplicationName?: string,
+    TemplateKey?: string,
     NavigationLinks?: { name: string, link: string, renderID: string }[],
     RenderID?:string,
     RouteID?: string
@@ -187,7 +188,8 @@ export {
 }
 
 interface IGlobalHeaderProps {
-    ApplicationName?:string,
+    ApplicationName?: string,
+    TemplateKey?: string,
     NavigationLinks?: { name: string, link: string, renderID: string }[],
     RenderID?:string,
     RouteID?: string
@@ -198,7 +200,8 @@ export {
 }
 
 interface IGlobalBodyProps {
-    ApplicationName?:string,
+    ApplicationName?: string,
+    TemplateKey?: string,
     NavigationLinks?: { name: string, link: string, renderID: string }[],
     RenderID?:string,
     RouteID?: string
@@ -209,7 +212,8 @@ export {
 }
 
 interface IGlobalFooterProps {
-    ApplicationName?:string,
+    ApplicationName?: string,
+    TemplateKey?: string,
     NavigationLinks?: { name: string, link: string, renderID: string }[],
     RenderID?:string,
     RouteID?: string

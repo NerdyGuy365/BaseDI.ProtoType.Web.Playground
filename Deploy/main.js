@@ -39249,33 +39249,55 @@ const Container_1_1 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
+  const templateKey = "About";
   return React.createElement("div", {
-    about: "About Container",
-    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-1"
-  }, React.createElement(Header_1_2, null), React.createElement(Body_1_3, null), React.createElement(Footer_1_4, null));
+    about: `${templateKey} Container`,
+    id: `Standard_PlaceHolder_1_0_${templateKey}_Standard_Div_1-1-1`
+  }, React.createElement(Header_1_2, {
+    ApplicationName: props.ApplicationName,
+    TemplateKey: templateKey,
+    NavigationLinks: props.NavigationLinks,
+    RenderID: props.RenderID,
+    RouteID: props.RouteID
+  }), React.createElement(Body_1_3, {
+    ApplicationName: props.ApplicationName,
+    TemplateKey: templateKey,
+    NavigationLinks: props.NavigationLinks,
+    RenderID: props.RenderID,
+    RouteID: props.RouteID
+  }), React.createElement(Footer_1_4, {
+    ApplicationName: props.ApplicationName,
+    TemplateKey: templateKey,
+    NavigationLinks: props.NavigationLinks,
+    RenderID: props.RenderID,
+    RouteID: props.RouteID
+  }));
 };
 
 exports.default = Container_1_1; //END CONTAINER - 1-1
 //BEGIN HEADER - 1-2
 
 const Header_1_2 = props => {
-  const pieceMenuRenderID = "Piece_Internet_And_Businesses_Online-Site_Promotion_Test_Navigation_Menu_1_0"; //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  const pieceMenuRenderID = ""; //COMPONENT CONTENT
 
   return React.createElement("div", {
-    about: "About Header",
-    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-2",
+    about: `${props.TemplateKey} Header`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2`,
     className: "container-fluid"
   }, React.createElement("div", {
-    about: "About Header Row",
-    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-2-1",
+    about: `${props.TemplateKey} Header Row`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1`,
     className: "row"
   }, React.createElement("div", {
-    about: "About Header Column",
-    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-2-1-1",
+    about: `${props.TemplateKey} Header Column`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1-1`,
     className: "col"
   }, React.createElement("div", {
-    about: "About Header Column Container",
-    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-2-1-1-1"
+    about: `${props.TemplateKey} Header Column Container`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1-1-1`
   }, React.createElement("p", {
     about: "Test Ingredient Container",
     id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-2-1-1-1-1",
@@ -39289,26 +39311,28 @@ const Body_1_3 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
+  const pieceMenuRenderID = ""; //COMPONENT CONTENT
+
   return React.createElement("div", {
-    about: "About Body",
-    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-3",
+    about: `${props.TemplateKey} Body`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3`,
     className: "container-fluid"
   }, React.createElement("div", {
-    about: "About Body Row",
-    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-3-1",
+    about: `${props.TemplateKey} Body Row`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1`,
     className: "row"
   }, React.createElement("div", {
-    about: "About Header Column",
-    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-3-1-1",
+    about: `${props.TemplateKey} Body Column`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1`,
     className: "col"
   }, React.createElement("div", {
-    about: "About Header Column Container",
-    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-3-1-1-1"
+    about: `${props.TemplateKey} Body Column Container`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1-1`
   }, React.createElement("p", {
     about: "Test Ingredient Container",
-    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-3-1-1-1-1",
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1-1-1`,
     className: "standard_literal_paragraph_container"
-  }, "About Template Header")))));
+  }, "About Template Body")))));
 }; //END BODY - 1-3
 //BEGIN FOOTER - 1-4
 
@@ -39317,24 +39341,26 @@ const Footer_1_4 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
+  const pieceMenuRenderID = ""; //COMPONENT CONTENT
+
   return React.createElement("div", {
-    about: "About Footer",
-    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-4",
+    about: `${props.TemplateKey} Footer`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4`,
     className: "container-fluid"
   }, React.createElement("div", {
-    about: "About Footer Row",
-    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-4-1",
+    about: `${props.TemplateKey} Footer Row`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1`,
     className: "row"
   }, React.createElement("div", {
-    about: "About Footer Column",
-    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-4-1-1",
+    about: `${props.TemplateKey} Footer Column`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1`,
     className: "col"
   }, React.createElement("div", {
-    about: "About Header Column Container",
-    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-4-1-1-1"
+    about: `${props.TemplateKey} Footer Column Container`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1-1`
   }, React.createElement("p", {
     about: "Test Ingredient Container",
-    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-4-1-1-1-1",
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1-1-1`,
     className: "standard_literal_paragraph_container"
   }, "About Template Footer")))));
 }; //END FOOTER - 1-4
@@ -39362,33 +39388,55 @@ const Container_1_1 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
+  const templateKey = "Contact";
   return React.createElement("div", {
-    about: "Contact Container",
-    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-1"
-  }, React.createElement(Header_1_2, null), React.createElement(Body_1_3, null), React.createElement(Footer_1_4, null));
+    about: `${templateKey} Container`,
+    id: `Standard_PlaceHolder_1_0_${templateKey}_Standard_Div_1-1-1`
+  }, React.createElement(Header_1_2, {
+    ApplicationName: props.ApplicationName,
+    TemplateKey: templateKey,
+    NavigationLinks: props.NavigationLinks,
+    RenderID: props.RenderID,
+    RouteID: props.RouteID
+  }), React.createElement(Body_1_3, {
+    ApplicationName: props.ApplicationName,
+    TemplateKey: templateKey,
+    NavigationLinks: props.NavigationLinks,
+    RenderID: props.RenderID,
+    RouteID: props.RouteID
+  }), React.createElement(Footer_1_4, {
+    ApplicationName: props.ApplicationName,
+    TemplateKey: templateKey,
+    NavigationLinks: props.NavigationLinks,
+    RenderID: props.RenderID,
+    RouteID: props.RouteID
+  }));
 };
 
 exports.default = Container_1_1; //END CONTAINER - 1-1
 //BEGIN HEADER - 1-2
 
 const Header_1_2 = props => {
-  const pieceMenuRenderID = "Piece_Internet_And_Businesses_Online-Site_Promotion_Test_Navigation_Menu_1_0"; //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  const pieceMenuRenderID = ""; //COMPONENT CONTENT
 
   return React.createElement("div", {
-    about: "Contact Header",
-    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-2",
+    about: `${props.TemplateKey} Header`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2`,
     className: "container-fluid"
   }, React.createElement("div", {
-    about: "Contact Header Row",
-    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-2-1",
+    about: `${props.TemplateKey} Header Row`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1`,
     className: "row"
   }, React.createElement("div", {
-    about: "Contact Header Column",
-    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-2-1-1",
+    about: `${props.TemplateKey} Header Column`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1-1`,
     className: "col"
   }, React.createElement("div", {
-    about: "Contact Header Column Container",
-    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-2-1-1-1"
+    about: `${props.TemplateKey} Header Column Container`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1-1-1`
   }, React.createElement("p", {
     about: "Test Ingredient Container",
     id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-2-1-1-1-1",
@@ -39402,26 +39450,28 @@ const Body_1_3 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
+  const pieceMenuRenderID = ""; //COMPONENT CONTENT
+
   return React.createElement("div", {
-    about: "Contact Body",
-    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-3",
+    about: `${props.TemplateKey} Body`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3`,
     className: "container-fluid"
   }, React.createElement("div", {
-    about: "Contact Body Row",
-    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-3-1",
+    about: `${props.TemplateKey} Body Row`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1`,
     className: "row"
   }, React.createElement("div", {
-    about: "Contact Header Column",
-    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-3-1-1",
+    about: `${props.TemplateKey} Body Column`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1`,
     className: "col"
   }, React.createElement("div", {
-    about: "Contact Header Column Container",
-    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-3-1-1-1"
+    about: `${props.TemplateKey} Body Column Container`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1-1`
   }, React.createElement("p", {
     about: "Test Ingredient Container",
-    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-3-1-1-1-1",
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1-1-1`,
     className: "standard_literal_paragraph_container"
-  }, "Contact Template Header")))));
+  }, "Contact Template Body")))));
 }; //END BODY - 1-3
 //BEGIN FOOTER - 1-4
 
@@ -39430,24 +39480,26 @@ const Footer_1_4 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
+  const pieceMenuRenderID = ""; //COMPONENT CONTENT
+
   return React.createElement("div", {
-    about: "Contact Footer",
-    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-4",
+    about: `${props.TemplateKey} Footer`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4`,
     className: "container-fluid"
   }, React.createElement("div", {
-    about: "Contact Footer Row",
-    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-4-1",
+    about: `${props.TemplateKey} Footer Row`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1`,
     className: "row"
   }, React.createElement("div", {
-    about: "Contact Footer Column",
-    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-4-1-1",
+    about: `${props.TemplateKey} Footer Column`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1`,
     className: "col"
   }, React.createElement("div", {
-    about: "Contact Header Column Container",
-    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-4-1-1-1"
+    about: `${props.TemplateKey} Footer Column Container`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1-1`
   }, React.createElement("p", {
     about: "Test Ingredient Container",
-    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-4-1-1-1-1",
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1-1-1`,
     className: "standard_literal_paragraph_container"
   }, "Contact Template Footer")))));
 }; //END FOOTER - 1-4
@@ -39475,21 +39527,25 @@ const Container_1_1 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
+  const templateKey = "Home";
   return React.createElement("div", {
-    about: "Home Container",
-    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-1"
+    about: `${templateKey} Container`,
+    id: `Standard_PlaceHolder_1_0_${templateKey}_Standard_Div_1-1-1`
   }, React.createElement(Header_1_2, {
     ApplicationName: props.ApplicationName,
+    TemplateKey: templateKey,
     NavigationLinks: props.NavigationLinks,
     RenderID: props.RenderID,
     RouteID: props.RouteID
   }), React.createElement(Body_1_3, {
     ApplicationName: props.ApplicationName,
+    TemplateKey: templateKey,
     NavigationLinks: props.NavigationLinks,
     RenderID: props.RenderID,
     RouteID: props.RouteID
   }), React.createElement(Footer_1_4, {
     ApplicationName: props.ApplicationName,
+    TemplateKey: templateKey,
     NavigationLinks: props.NavigationLinks,
     RenderID: props.RenderID,
     RouteID: props.RouteID
@@ -39500,23 +39556,26 @@ exports.default = Container_1_1; //END CONTAINER - 1-1
 //BEGIN HEADER - 1-2
 
 const Header_1_2 = props => {
-  const pieceMenuRenderID = "Piece_Internet_And_Businesses_Online-Site_Promotion_Test_Navigation_Menu_1_0"; //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  const pieceMenuRenderID = ""; //COMPONENT CONTENT
 
   return React.createElement("div", {
-    about: "Home Header",
-    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-2",
+    about: `${props.TemplateKey} Header`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2`,
     className: "container-fluid"
   }, React.createElement("div", {
-    about: "Home Header Row",
-    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-2-1",
+    about: `${props.TemplateKey} Header Row`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1`,
     className: "row"
   }, React.createElement("div", {
-    about: "Home Header Column",
-    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-2-1-1",
+    about: `${props.TemplateKey} Header Column`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1-1`,
     className: "col"
   }, React.createElement("div", {
-    about: "Home Header Column Container",
-    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-2-1-1-1"
+    about: `${props.TemplateKey} Header Column Container`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1-1-1`
   }, React.createElement("p", {
     about: "Test Ingredient Container",
     id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-2-1-1-1-1",
@@ -39530,26 +39589,28 @@ const Body_1_3 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
+  const pieceMenuRenderID = ""; //COMPONENT CONTENT
+
   return React.createElement("div", {
-    about: "Home Body",
-    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-3",
+    about: `${props.TemplateKey} Body`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3`,
     className: "container-fluid"
   }, React.createElement("div", {
-    about: "Home Body Row",
-    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-3-1",
+    about: `${props.TemplateKey} Body Row`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1`,
     className: "row"
   }, React.createElement("div", {
-    about: "Home Header Column",
-    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-3-1-1",
+    about: `${props.TemplateKey} Body Column`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1`,
     className: "col"
   }, React.createElement("div", {
-    about: "Home Header Column Container",
-    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-3-1-1-1"
+    about: `${props.TemplateKey} Body Column Container`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1-1`
   }, React.createElement("p", {
     about: "Test Ingredient Container",
-    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-3-1-1-1-1",
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1-1-1`,
     className: "standard_literal_paragraph_container"
-  }, "Home Template Header")))));
+  }, "Home Template Body")))));
 }; //END BODY - 1-3
 //BEGIN FOOTER - 1-4
 
@@ -39558,24 +39619,26 @@ const Footer_1_4 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
+  const pieceMenuRenderID = ""; //COMPONENT CONTENT
+
   return React.createElement("div", {
-    about: "Home Footer",
-    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-4",
+    about: `${props.TemplateKey} Footer`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4`,
     className: "container-fluid"
   }, React.createElement("div", {
-    about: "Home Footer Row",
-    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-4-1",
+    about: `${props.TemplateKey} Footer Row`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1`,
     className: "row"
   }, React.createElement("div", {
-    about: "Home Footer Column",
-    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-4-1-1",
+    about: `${props.TemplateKey} Footer Column`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1`,
     className: "col"
   }, React.createElement("div", {
-    about: "Home Header Column Container",
-    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-4-1-1-1"
+    about: `${props.TemplateKey} Footer Column Container`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1-1`
   }, React.createElement("p", {
     about: "Test Ingredient Container",
-    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-4-1-1-1-1",
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1-1-1`,
     className: "standard_literal_paragraph_container"
   }, "Home Template Footer")))));
 }; //END FOOTER - 1-4
