@@ -77,7 +77,7 @@ const Header_1_2 = (props: IGlobalHeaderProps) => {
                                 <div about="Menu Ingredient Row" id="Navigation_Menu_1_0_Application_Standard_Div_1-1-3-1" className="row">
                                     {props.NavigationLinks != undefined && props.NavigationLinks.map((item: { name: string, link: string, renderID: string }, index: number) => {
                                     return <div about="Menu Ingredient Column" key={index} id={"Navigation_Menu_1_0_Menu_Standard_Div_1-1-3-1-" + (index + 1)} className="col-sm-1">
-                                        <div about="Menu Ingredient Column Container" id={"Navigation_Menu_1_0_Menu_Standard_Div_1-1-3-1-" + (index + 1) + "-1"} className="navigation_menu_div">
+                                        <div about="Menu Ingredient Column Container" id={"Navigation_Menu_1_0_Menu_Standard_Div_1-1-3-1-" + (index + 1) + "-1"} className="standard_div_container">
                                             <Link about="Menu Ingredient" id={"Navigation_Menu_1_0_Menu_Standard_Div_1-1-3-1-" + (index + 1) + "-1-1"} to={item.link}>{item.name}</Link>
                                             </div>
                                         </div>
@@ -123,7 +123,7 @@ const Body_1_3 = (props: IGlobalBodyProps) => {
         <div about="Application Body Container" id="Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-3" className="container-fluid">
             <div about="Application Body Row" id="Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-3-1">
                 <div about="Application Body Column" id="Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-3-1-1">
-                    <div about="Application Body Column Container" id="Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-3-1-1-1-1">
+                    <div about="Application Body Column Container" id="Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-3-1-1-1-1" className="standard_div_container">
                         {props.NavigationLinks != undefined && props.NavigationLinks.map((item: { name: string, link: string, renderID: string }, index: number) => {
                             return <Route key={index} exact path={item.link} render={() => <ScreenFactory ApplicationName={props.ApplicationName} NavigationLinks={props.NavigationLinks} RenderID={item.renderID} RouteID={props.RouteID} />} />
                         })}
@@ -168,7 +168,7 @@ const Footer_1_4 = (props: IGlobalFooterProps) => {
                 <div about="Application Footer Column" id="Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-4-1-1" className="col">
                     <div about="Application Footer Column Container" id="Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-4-1-1-1">
 
-                        <p about="Test Ingredient Container" id="Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-4-1-1-1-1"></p>
+                        <p about="Test Ingredient Container" id="Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-4-1-1-1-1" className="standard_literal_paragraph_container"></p>
 
                     </div>
                 </div>

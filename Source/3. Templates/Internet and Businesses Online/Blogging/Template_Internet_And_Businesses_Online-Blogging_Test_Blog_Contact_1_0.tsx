@@ -60,7 +60,7 @@ const Header_1_2 = (props: IGlobalHeaderProps) => {
                 <div about="Contact Header Column" id="Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-2-1-1" className="col">
                     <div about="Contact Header Column Container" id="Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-2-1-1-1">
 
-                        <p about="Test Ingredient Container" id="Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-2-1-1-1-1" className="standard_literal_paragraph">Contact Template Header</p>
+                        <p about="Test Ingredient Container" id="Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-2-1-1-1-1" className="standard_literal_paragraph_container">Contact Template Header</p>
 
                     </div>
                 </div>
@@ -103,7 +103,7 @@ const Body_1_3 = (props: IGlobalBodyProps) => {
                 <div about="Contact Header Column" id="Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-3-1-1" className="col">
                     <div about="Contact Header Column Container" id="Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-3-1-1-1">
 
-                        <p about="Test Ingredient Container" id="Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-3-1-1-1-1">Contact Template Header</p>
+                        <p about="Test Ingredient Container" id="Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-3-1-1-1-1" className="standard_literal_paragraph_container">Contact Template Header</p>
 
                     </div>
                 </div>
@@ -147,7 +147,7 @@ const Footer_1_4 = (props: IGlobalFooterProps) => {
                 <div about="Contact Footer Column" id="Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-4-1-1" className="col">
                     <div about="Contact Header Column Container" id="Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-4-1-1-1">
 
-                        <p about="Test Ingredient Container" id="Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-4-1-1-1-1">Contact Template Footer</p>
+                        <p about="Test Ingredient Container" id="Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-4-1-1-1-1" className="standard_literal_paragraph_container">Contact Template Footer</p>
 
                     </div>
                 </div>

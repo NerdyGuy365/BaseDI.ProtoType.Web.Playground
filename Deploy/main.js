@@ -38802,7 +38802,7 @@ const Header_1_2 = props => {
     }, React.createElement("div", {
       about: "Menu Ingredient Column Container",
       id: "Navigation_Menu_1_0_Menu_Standard_Div_1-1-3-1-" + (index + 1) + "-1",
-      className: "navigation_menu_div"
+      className: "standard_div_container"
     }, React.createElement(react_router_dom_1.Link, {
       about: "Menu Ingredient",
       id: "Navigation_Menu_1_0_Menu_Standard_Div_1-1-3-1-" + (index + 1) + "-1-1",
@@ -38829,7 +38829,8 @@ const Body_1_3 = props => {
     id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-3-1-1"
   }, React.createElement("div", {
     about: "Application Body Column Container",
-    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-3-1-1-1-1"
+    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-3-1-1-1-1",
+    className: "standard_div_container"
   }, props.NavigationLinks != undefined && props.NavigationLinks.map((item, index) => {
     return React.createElement(react_router_dom_1.Route, {
       key: index,
@@ -38868,7 +38869,8 @@ const Footer_1_4 = props => {
     id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-4-1-1-1"
   }, React.createElement("p", {
     about: "Test Ingredient Container",
-    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-4-1-1-1-1"
+    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-4-1-1-1-1",
+    className: "standard_literal_paragraph_container"
   })))));
 }; //END FOOTER - 1-4
 
@@ -39277,7 +39279,7 @@ const Header_1_2 = props => {
   }, React.createElement("p", {
     about: "Test Ingredient Container",
     id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-2-1-1-1-1",
-    className: "standard_literal_paragraph"
+    className: "standard_literal_paragraph_container"
   }, "About Template Header")))));
 }; //END HEADER - 1-2
 //BEGIN BODY - 1-3
@@ -39304,7 +39306,8 @@ const Body_1_3 = props => {
     id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-3-1-1-1"
   }, React.createElement("p", {
     about: "Test Ingredient Container",
-    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-3-1-1-1-1"
+    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-3-1-1-1-1",
+    className: "standard_literal_paragraph_container"
   }, "About Template Header")))));
 }; //END BODY - 1-3
 //BEGIN FOOTER - 1-4
@@ -39331,7 +39334,8 @@ const Footer_1_4 = props => {
     id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-4-1-1-1"
   }, React.createElement("p", {
     about: "Test Ingredient Container",
-    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-4-1-1-1-1"
+    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-4-1-1-1-1",
+    className: "standard_literal_paragraph_container"
   }, "About Template Footer")))));
 }; //END FOOTER - 1-4
 
@@ -39388,7 +39392,7 @@ const Header_1_2 = props => {
   }, React.createElement("p", {
     about: "Test Ingredient Container",
     id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-2-1-1-1-1",
-    className: "standard_literal_paragraph"
+    className: "standard_literal_paragraph_container"
   }, "Contact Template Header")))));
 }; //END HEADER - 1-2
 //BEGIN BODY - 1-3
@@ -39415,7 +39419,8 @@ const Body_1_3 = props => {
     id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-3-1-1-1"
   }, React.createElement("p", {
     about: "Test Ingredient Container",
-    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-3-1-1-1-1"
+    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-3-1-1-1-1",
+    className: "standard_literal_paragraph_container"
   }, "Contact Template Header")))));
 }; //END BODY - 1-3
 //BEGIN FOOTER - 1-4
@@ -39442,7 +39447,8 @@ const Footer_1_4 = props => {
     id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-4-1-1-1"
   }, React.createElement("p", {
     about: "Test Ingredient Container",
-    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-4-1-1-1-1"
+    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-4-1-1-1-1",
+    className: "standard_literal_paragraph_container"
   }, "Contact Template Footer")))));
 }; //END FOOTER - 1-4
 
@@ -39514,7 +39520,7 @@ const Header_1_2 = props => {
   }, React.createElement("p", {
     about: "Test Ingredient Container",
     id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-2-1-1-1-1",
-    className: "standard_literal_paragraph"
+    className: "standard_literal_paragraph_container"
   }, "Home Template Header")))));
 }; //END HEADER - 1-2
 //BEGIN BODY - 1-3
@@ -39541,7 +39547,8 @@ const Body_1_3 = props => {
     id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-3-1-1-1"
   }, React.createElement("p", {
     about: "Test Ingredient Container",
-    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-3-1-1-1-1"
+    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-3-1-1-1-1",
+    className: "standard_literal_paragraph_container"
   }, "Home Template Header")))));
 }; //END BODY - 1-3
 //BEGIN FOOTER - 1-4
@@ -39568,7 +39575,8 @@ const Footer_1_4 = props => {
     id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-4-1-1-1"
   }, React.createElement("p", {
     about: "Test Ingredient Container",
-    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-4-1-1-1-1"
+    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-4-1-1-1-1",
+    className: "standard_literal_paragraph_container"
   }, "Home Template Footer")))));
 }; //END FOOTER - 1-4
 
