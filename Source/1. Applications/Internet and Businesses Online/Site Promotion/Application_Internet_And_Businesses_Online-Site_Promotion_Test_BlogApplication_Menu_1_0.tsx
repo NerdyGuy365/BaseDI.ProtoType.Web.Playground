@@ -19,26 +19,11 @@ const Container_1_1 = (props: IGlobalContainerProps) => {
     ///////////////////////////////////////////////////////
     return (<BrowserRouter>
         <div about="Application Container" id="Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-1">
-            <Header_1_2
-                ApplicationName={props.ApplicationName}
-                NavigationLinks={props.NavigationLinks}
-                RenderID={props.RenderID}
-                RouteID={props.RouteID}
-            />
+            <Header_1_2 {...props} />
 
-            <Body_1_3
-                ApplicationName={props.ApplicationName}
-                NavigationLinks={props.NavigationLinks}
-                RenderID={props.RenderID}
-                RouteID={props.RouteID}
-            />
+            <Body_1_3 {...props} />
 
-            <Footer_1_4
-                ApplicationName={props.ApplicationName}
-                NavigationLinks={props.NavigationLinks}
-                RenderID={props.RenderID}
-                RouteID={props.RouteID}
-            />            
+            <Footer_1_4 {...props} />            
         </div>
     </BrowserRouter>)
 }

@@ -20,29 +20,11 @@ const Container_1_1 = (props: IGlobalContainerProps) => {
 
     return (
         <div about={`${templateKey} Container`} id={`Standard_PlaceHolder_1_0_${templateKey}_Standard_Div_1-1-1`}>
-            <Header_1_2
-                ApplicationName={props.ApplicationName}
-                TemplateKey={templateKey}
-                NavigationLinks={props.NavigationLinks}
-                RenderID={props.RenderID}
-                RouteID={props.RouteID}
-            />
+            <Header_1_2 {...props} TemplateKey={templateKey} />
 
-            <Body_1_3
-                ApplicationName={props.ApplicationName}
-                TemplateKey={templateKey}
-                NavigationLinks={props.NavigationLinks}
-                RenderID={props.RenderID}
-                RouteID={props.RouteID}
-            />
+            <Body_1_3 {...props} TemplateKey={templateKey} />
 
-            <Footer_1_4
-                ApplicationName={props.ApplicationName}
-                TemplateKey={templateKey}
-                NavigationLinks={props.NavigationLinks}
-                RenderID={props.RenderID}
-                RouteID={props.RouteID}
-            />
+            <Footer_1_4 {...props} TemplateKey={templateKey} />
         </div>)
 }
 

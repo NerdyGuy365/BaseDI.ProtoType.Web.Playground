@@ -47,12 +47,7 @@ class Container_1_1 extends React.Component<IGlobalContainerProps, any>{
     //COMPONENT CONTENT
     ///////////////////////////////////////////////////////
     render() {
-        return (<TemplateFactory
-            ApplicationName={this.props.ApplicationName}
-            NavigationLinks={this.props.NavigationLinks}
-            RenderID={this.screenTemplate}
-            RouteID={this.props.RouteID}
-        />)
+        return (<TemplateFactory {...this.props} RenderID={this.screenTemplate} NavigationLinks={this.state.NavigationLinks} />)
     }
 }
 

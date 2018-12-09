@@ -38749,22 +38749,7 @@ const Container_1_1 = props => {
   return React.createElement(react_router_dom_1.BrowserRouter, null, React.createElement("div", {
     about: "Application Container",
     id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-1"
-  }, React.createElement(Header_1_2, {
-    ApplicationName: props.ApplicationName,
-    NavigationLinks: props.NavigationLinks,
-    RenderID: props.RenderID,
-    RouteID: props.RouteID
-  }), React.createElement(Body_1_3, {
-    ApplicationName: props.ApplicationName,
-    NavigationLinks: props.NavigationLinks,
-    RenderID: props.RenderID,
-    RouteID: props.RouteID
-  }), React.createElement(Footer_1_4, {
-    ApplicationName: props.ApplicationName,
-    NavigationLinks: props.NavigationLinks,
-    RenderID: props.RenderID,
-    RouteID: props.RouteID
-  })));
+  }, React.createElement(Header_1_2, Object.assign({}, props)), React.createElement(Body_1_3, Object.assign({}, props)), React.createElement(Footer_1_4, Object.assign({}, props))));
 };
 
 exports.default = Container_1_1; //END CONTAINER - 1-1
@@ -38990,12 +38975,10 @@ class Container_1_1 extends React.Component {
 
 
   render() {
-    return React.createElement(TemplateFactory_1.default, {
-      ApplicationName: this.props.ApplicationName,
-      NavigationLinks: this.state.NavigationLinks,
+    return React.createElement(TemplateFactory_1.default, Object.assign({}, this.props, {
       RenderID: this.screenTemplate,
-      RouteID: this.props.RouteID
-    });
+      NavigationLinks: this.state.NavigationLinks
+    }));
   }
 
 }
@@ -39081,12 +39064,10 @@ class Container_1_1 extends React.Component {
 
 
   render() {
-    return React.createElement(TemplateFactory_1.default, {
-      ApplicationName: this.props.ApplicationName,
-      NavigationLinks: this.state.NavigationLinks,
+    return React.createElement(TemplateFactory_1.default, Object.assign({}, this.props, {
       RenderID: this.screenTemplate,
-      RouteID: this.props.RouteID
-    });
+      NavigationLinks: this.state.NavigationLinks
+    }));
   }
 
 }
@@ -39172,12 +39153,10 @@ class Container_1_1 extends React.Component {
 
 
   render() {
-    return React.createElement(TemplateFactory_1.default, {
-      ApplicationName: this.props.ApplicationName,
-      NavigationLinks: this.props.NavigationLinks,
+    return React.createElement(TemplateFactory_1.default, Object.assign({}, this.props, {
       RenderID: this.screenTemplate,
-      RouteID: this.props.RouteID
-    });
+      NavigationLinks: this.state.NavigationLinks
+    }));
   }
 
 }
@@ -39253,25 +39232,13 @@ const Container_1_1 = props => {
   return React.createElement("div", {
     about: `${templateKey} Container`,
     id: `Standard_PlaceHolder_1_0_${templateKey}_Standard_Div_1-1-1`
-  }, React.createElement(Header_1_2, {
-    ApplicationName: props.ApplicationName,
-    TemplateKey: templateKey,
-    NavigationLinks: props.NavigationLinks,
-    RenderID: props.RenderID,
-    RouteID: props.RouteID
-  }), React.createElement(Body_1_3, {
-    ApplicationName: props.ApplicationName,
-    TemplateKey: templateKey,
-    NavigationLinks: props.NavigationLinks,
-    RenderID: props.RenderID,
-    RouteID: props.RouteID
-  }), React.createElement(Footer_1_4, {
-    ApplicationName: props.ApplicationName,
-    TemplateKey: templateKey,
-    NavigationLinks: props.NavigationLinks,
-    RenderID: props.RenderID,
-    RouteID: props.RouteID
-  }));
+  }, React.createElement(Header_1_2, Object.assign({}, props, {
+    TemplateKey: templateKey
+  })), React.createElement(Body_1_3, Object.assign({}, props, {
+    TemplateKey: templateKey
+  })), React.createElement(Footer_1_4, Object.assign({}, props, {
+    TemplateKey: templateKey
+  })));
 };
 
 exports.default = Container_1_1; //END CONTAINER - 1-1
@@ -39392,25 +39359,13 @@ const Container_1_1 = props => {
   return React.createElement("div", {
     about: `${templateKey} Container`,
     id: `Standard_PlaceHolder_1_0_${templateKey}_Standard_Div_1-1-1`
-  }, React.createElement(Header_1_2, {
-    ApplicationName: props.ApplicationName,
-    TemplateKey: templateKey,
-    NavigationLinks: props.NavigationLinks,
-    RenderID: props.RenderID,
-    RouteID: props.RouteID
-  }), React.createElement(Body_1_3, {
-    ApplicationName: props.ApplicationName,
-    TemplateKey: templateKey,
-    NavigationLinks: props.NavigationLinks,
-    RenderID: props.RenderID,
-    RouteID: props.RouteID
-  }), React.createElement(Footer_1_4, {
-    ApplicationName: props.ApplicationName,
-    TemplateKey: templateKey,
-    NavigationLinks: props.NavigationLinks,
-    RenderID: props.RenderID,
-    RouteID: props.RouteID
-  }));
+  }, React.createElement(Header_1_2, Object.assign({}, props, {
+    TemplateKey: templateKey
+  })), React.createElement(Body_1_3, Object.assign({}, props, {
+    TemplateKey: templateKey
+  })), React.createElement(Footer_1_4, Object.assign({}, props, {
+    TemplateKey: templateKey
+  })));
 };
 
 exports.default = Container_1_1; //END CONTAINER - 1-1
@@ -39531,25 +39486,13 @@ const Container_1_1 = props => {
   return React.createElement("div", {
     about: `${templateKey} Container`,
     id: `Standard_PlaceHolder_1_0_${templateKey}_Standard_Div_1-1-1`
-  }, React.createElement(Header_1_2, {
-    ApplicationName: props.ApplicationName,
-    TemplateKey: templateKey,
-    NavigationLinks: props.NavigationLinks,
-    RenderID: props.RenderID,
-    RouteID: props.RouteID
-  }), React.createElement(Body_1_3, {
-    ApplicationName: props.ApplicationName,
-    TemplateKey: templateKey,
-    NavigationLinks: props.NavigationLinks,
-    RenderID: props.RenderID,
-    RouteID: props.RouteID
-  }), React.createElement(Footer_1_4, {
-    ApplicationName: props.ApplicationName,
-    TemplateKey: templateKey,
-    NavigationLinks: props.NavigationLinks,
-    RenderID: props.RenderID,
-    RouteID: props.RouteID
-  }));
+  }, React.createElement(Header_1_2, Object.assign({}, props, {
+    TemplateKey: templateKey
+  })), React.createElement(Body_1_3, Object.assign({}, props, {
+    TemplateKey: templateKey
+  })), React.createElement(Footer_1_4, Object.assign({}, props, {
+    TemplateKey: templateKey
+  })));
 };
 
 exports.default = Container_1_1; //END CONTAINER - 1-1
