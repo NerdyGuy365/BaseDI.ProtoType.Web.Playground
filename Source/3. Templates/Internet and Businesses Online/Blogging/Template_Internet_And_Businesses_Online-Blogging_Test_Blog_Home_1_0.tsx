@@ -9,22 +9,22 @@ import * as React from 'react';
 
 //IMPORT APPLICATION COMPONENTS
 import { Global, IGlobalContainerProps, IGlobalHeaderProps, IGlobalBodyProps, IGlobalFooterProps } from '../../../Global';
+import { default as PieceFactory } from '../../../4. Pieces/Internet and Businesses Online/Web Development/PieceFactory';
 
 //BEGIN CONTAINER - 1-1
 const Container_1_1 = (props: IGlobalContainerProps) => {
     ///////////////////////////////////////////////////////
     //COMPONENT CONTENT
     ///////////////////////////////////////////////////////
+    const templateKey: string = "Home";
+
     return (
-        <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-1">
-            <Header_1_2
-            />
+        <div about={`${templateKey} Container`} id={`Standard_PlaceHolder_1_0_${templateKey}_Standard_Div_1-1-1`}>
+            <Header_1_2 {...props} TemplateKey={templateKey} />
 
-            <Body_1_3
-            />
+            <Body_1_3 {...props} TemplateKey={templateKey} />
 
-            <Footer_1_4
-            />
+            <Footer_1_4 {...props} TemplateKey={templateKey} />
         </div>)
 }
 
@@ -51,14 +51,21 @@ export default Container_1_1;
 
 //BEGIN HEADER - 1-2
 const Header_1_2 = (props: IGlobalHeaderProps) => {
-    const pieceMenuRenderID = "Piece_Internet_And_Businesses_Online_Site_Promotion_Blogging_Test_Navigation_Menu_1_0";
+    ///////////////////////////////////////////////////////
+    //COMPONENT CONTENT
+    ///////////////////////////////////////////////////////
+    const pieceMenuRenderID = "";
 
     //COMPONENT CONTENT
     return (
-        <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2" className="container-fluid">
-            <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1" className="row">
-                <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1-1" className="col">
-                    <p>Home Template Header</p>
+        <div about={`${props.TemplateKey} Header`} id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2`} className="container-fluid">
+            <div about={`${props.TemplateKey} Header Row`} id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1`} className="row">
+                <div about={`${props.TemplateKey} Header Column`} id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1-1`} className="col">
+                    <div about={`${props.TemplateKey} Header Column Container`} id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1-1-1`}>
+
+                        <p about="Test Ingredient Container" id="Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-2-1-1-1-1" className="standard_literal_paragraph_container">Home Template Header</p>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,11 +100,18 @@ const Body_1_3 = (props: IGlobalBodyProps) => {
     ///////////////////////////////////////////////////////
     //COMPONENT CONTENT
     ///////////////////////////////////////////////////////
+    const pieceMenuRenderID = "";
+
+    //COMPONENT CONTENT
     return (
-        <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3" className="container-fluid">
-            <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3-1" className="row">
-                <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3-1-1" className="col">
-                    <p>Home Template Body</p>
+        <div about={`${props.TemplateKey} Body`} id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3`} className="container-fluid">
+            <div about={`${props.TemplateKey} Body Row`} id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1`} className="row">
+                <div about={`${props.TemplateKey} Body Column`} id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1`} className="col">
+                    <div about={`${props.TemplateKey} Body Column Container`} id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1-1`}>
+
+                        <p about="Test Ingredient Container" id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1-1-1`} className="standard_literal_paragraph_container">Home Template Body</p>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,11 +147,18 @@ const Footer_1_4 = (props: IGlobalFooterProps) => {
     ///////////////////////////////////////////////////////
     //COMPONENT CONTENT
     ///////////////////////////////////////////////////////
+    const pieceMenuRenderID = "";
+
+    //COMPONENT CONTENT
     return (
-        <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4" className="container-fluid">
-            <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4-1" className="row">
-                <div id="InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4-1-1" className="col">
-                    <p>Home Template Footer</p>
+        <div about={`${props.TemplateKey} Footer`} id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4`} className="container-fluid">
+            <div about={`${props.TemplateKey} Footer Row`} id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1`} className="row">
+                <div about={`${props.TemplateKey} Footer Column`} id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1`} className="col">
+                    <div about={`${props.TemplateKey} Footer Column Container`} id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1-1`}>
+
+                        <p about="Test Ingredient Container" id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1-1-1`} className="standard_literal_paragraph_container">Home Template Footer</p>
+
+                    </div>
                 </div>
             </div>
         </div>

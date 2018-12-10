@@ -15,15 +15,33 @@ const Container_1_1 = (props: IGlobalContainerProps) => {
     ///////////////////////////////////////////////////////
     //COMPONENT CONTENT
     ///////////////////////////////////////////////////////
-    const templateKey:string = "About";
-    
+    const templateKey: string = "Home";
+
     return (
         <div about={`${templateKey} Container`} id={`Standard_PlaceHolder_1_0_${templateKey}_Standard_Div_1-1-1`}>
-            <Header_1_2 {...props} TemplateKey={templateKey} />
+            <Header_1_2
+                ApplicationName={props.ApplicationName}
+                TemplateKey={templateKey}
+                NavigationLinks={props.NavigationLinks}
+                RenderID={props.RenderID}
+                RouteID={props.RouteID}
+            />
 
-            <Body_1_3 {...props} TemplateKey={templateKey} />
+            <Body_1_3
+                ApplicationName={props.ApplicationName}
+                TemplateKey={templateKey}
+                NavigationLinks={props.NavigationLinks}
+                RenderID={props.RenderID}
+                RouteID={props.RouteID}
+            />
 
-            <Footer_1_4 {...props} TemplateKey={templateKey} />
+            <Footer_1_4
+                ApplicationName={props.ApplicationName}
+                TemplateKey={templateKey}
+                NavigationLinks={props.NavigationLinks}
+                RenderID={props.RenderID}
+                RouteID={props.RouteID}
+            />
         </div>)
 }
 
@@ -62,7 +80,7 @@ const Header_1_2 = (props: IGlobalHeaderProps) => {
                 <div about={`${props.TemplateKey} Header Column`} id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1-1`} className="col">
                     <div about={`${props.TemplateKey} Header Column Container`} id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1-1-1`}>
 
-                        <p about="Test Ingredient Container" id="Standard_PlaceHolder_1_0_About_Standard_Div_1-1-2-1-1-1-1" className="standard_literal_paragraph_container">About Template Header</p>
+                        <p about="Test Ingredient Container" id="Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-2-1-1-1-1" className="standard_literal_paragraph_container">Home Template Header</p>
 
                     </div>
                 </div>
@@ -108,7 +126,7 @@ const Body_1_3 = (props: IGlobalBodyProps) => {
                 <div about={`${props.TemplateKey} Body Column`} id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1`} className="col">
                     <div about={`${props.TemplateKey} Body Column Container`} id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1-1`}>
 
-                        <p about="Test Ingredient Container" id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1-1-1`} className="standard_literal_paragraph_container">About Template Body</p>
+                        <p about="Test Ingredient Container" id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1-1-1`} className="standard_literal_paragraph_container">Home Template Body</p>
 
                     </div>
                 </div>
@@ -155,7 +173,7 @@ const Footer_1_4 = (props: IGlobalFooterProps) => {
                 <div about={`${props.TemplateKey} Footer Column`} id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1`} className="col">
                     <div about={`${props.TemplateKey} Footer Column Container`} id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1-1`}>
 
-                        <p about="Test Ingredient Container" id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1-1-1`} className="standard_literal_paragraph_container">About Template Footer</p>
+                        <p about="Test Ingredient Container" id={`Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1-1-1`} className="standard_literal_paragraph_container">Home Template Footer</p>
 
                     </div>
                 </div>

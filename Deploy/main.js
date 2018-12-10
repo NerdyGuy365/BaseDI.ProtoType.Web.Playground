@@ -38654,7 +38654,7 @@ Object.defineProperty(exports, "__esModule", {
 
 const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
-const Piece_Internet_And_Businesses_Online_Site_Promotion_Test_Navigation_Menu_1_0_1 = __webpack_require__(/*! ../../../4. Pieces/Internet and Businesses Online/Site Promotion/Piece_Internet_And_Businesses_Online-Site_Promotion_Test_Navigation_Menu_1_0 */ "./source/4. Pieces/Internet and Businesses Online/Site Promotion/Piece_Internet_And_Businesses_Online-Site_Promotion_Test_Navigation_Menu_1_0.tsx"); //BEGIN CONTAINER - 1-1
+const ApplicationFactory_1 = __webpack_require__(/*! ../../../1. Applications/Internet and Businesses Online/Web Development/ApplicationFactory */ "./source/1. Applications/Internet and Businesses Online/Web Development/ApplicationFactory.tsx"); //BEGIN CONTAINER - 1-1
 
 
 class Container_1_1 extends React.Component {
@@ -38688,7 +38688,7 @@ class Container_1_1 extends React.Component {
     }; //WIRE EVENTS
     //SET DEFAULTS        
 
-    this.startUpScreen = "Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_Home_1_0";
+    this.startUpComponent = "Application_Internet_And_Businesses_Online-Site_Promotion_Test_BlogApplication_Menu_1_0";
   } ///////////////////////////////////////////////////////
   //ReactJS Proprietary 
   ///////////////////////////////////////////////////////
@@ -38709,26 +38709,155 @@ class Container_1_1 extends React.Component {
 
 
   render() {
-    return React.createElement(Header_1_2, {
-      ApplicationName: this.props.ApplicationName,
-      NavigationLinks: this.state.NavigationLinks,
-      RouteID: this.props.RouteID
+    return React.createElement(ApplicationFactory_1.default, {
+      ApplicationName: this.startUpComponent,
+      NavigationLinks: this.state.NavigationLinks
     });
   }
 
 }
 
 exports.default = Container_1_1; //END CONTAINER - 1-1
+
+/***/ }),
+
+/***/ "./source/1. Applications/Internet and Businesses Online/Site Promotion/Application_Internet_And_Businesses_Online-Site_Promotion_Test_BlogApplication_Menu_1_0.tsx":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./source/1. Applications/Internet and Businesses Online/Site Promotion/Application_Internet_And_Businesses_Online-Site_Promotion_Test_BlogApplication_Menu_1_0.tsx ***!
+  \**************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}); //IMPORT REACT STUFF
+
+const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+
+const ScreenFactory_1 = __webpack_require__(/*! ../../../2. Screens/Internet and Businesses Online/Web Development/ScreenFactory */ "./source/2. Screens/Internet and Businesses Online/Web Development/ScreenFactory.tsx"); //BEGIN CONTAINER - 1-1
+
+
+const Container_1_1 = props => {
+  ///////////////////////////////////////////////////////
+  //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  return React.createElement(react_router_dom_1.BrowserRouter, null, React.createElement("div", {
+    about: "Application Container",
+    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-1"
+  }, React.createElement(Header_1_2, Object.assign({}, props)), React.createElement(Body_1_3, Object.assign({}, props)), React.createElement(Footer_1_4, Object.assign({}, props))));
+};
+
+exports.default = Container_1_1; //END CONTAINER - 1-1
 //BEGIN HEADER - 1-2
 
 const Header_1_2 = props => {
   //COMPONENT CONTENT
-  return React.createElement(Piece_Internet_And_Businesses_Online_Site_Promotion_Test_Navigation_Menu_1_0_1.default, {
-    ApplicationName: props.ApplicationName,
-    NavigationLinks: props.NavigationLinks,
-    RenderID: props.RenderID
-  });
+  return React.createElement("div", {
+    about: "Application Header Container",
+    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-2",
+    className: "container-fluid"
+  }, React.createElement("div", {
+    about: "Application Header Row",
+    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-2-1"
+  }, React.createElement("div", {
+    about: "Application Header Column",
+    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-2-1-1"
+  }, React.createElement("div", {
+    about: "Application Header Column Container",
+    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-2-1-1-1-1"
+  }, React.createElement("div", {
+    about: "Menu Ingredient Container",
+    id: "Navigation_Menu_1_0_Application_Standard_Div_1-1-3",
+    className: "container-fluid mb-2"
+  }, React.createElement("div", {
+    about: "Menu Ingredient Row",
+    id: "Navigation_Menu_1_0_Application_Standard_Div_1-1-3-1",
+    className: "row"
+  }, props.NavigationLinks != undefined && props.NavigationLinks.map((item, index) => {
+    return React.createElement("div", {
+      about: "Menu Ingredient Column",
+      key: index,
+      id: "Navigation_Menu_1_0_Menu_Standard_Div_1-1-3-1-" + (index + 1),
+      className: "col-sm-1"
+    }, React.createElement("div", {
+      about: "Menu Ingredient Column Container",
+      id: "Navigation_Menu_1_0_Menu_Standard_Div_1-1-3-1-" + (index + 1) + "-1",
+      className: "standard_div_container"
+    }, React.createElement(react_router_dom_1.Link, {
+      about: "Menu Ingredient",
+      id: "Navigation_Menu_1_0_Menu_Standard_Div_1-1-3-1-" + (index + 1) + "-1-1",
+      to: item.link
+    }, item.name)));
+  })))))));
 }; //END HEADER - 1-2
+//BEGIN BODY - 1-3
+
+
+const Body_1_3 = props => {
+  ///////////////////////////////////////////////////////
+  //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  return React.createElement("div", {
+    about: "Application Body Container",
+    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-3",
+    className: "container-fluid"
+  }, React.createElement("div", {
+    about: "Application Body Row",
+    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-3-1"
+  }, React.createElement("div", {
+    about: "Application Body Column",
+    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-3-1-1"
+  }, React.createElement("div", {
+    about: "Application Body Column Container",
+    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-3-1-1-1-1",
+    className: "standard_div_container"
+  }, props.NavigationLinks != undefined && props.NavigationLinks.map((item, index) => {
+    return React.createElement(react_router_dom_1.Route, {
+      key: index,
+      exact: true,
+      path: item.link,
+      render: () => React.createElement(ScreenFactory_1.default, {
+        ApplicationName: props.ApplicationName,
+        NavigationLinks: props.NavigationLinks,
+        RenderID: item.renderID,
+        RouteID: props.RouteID
+      })
+    });
+  })))));
+}; //END BODY - 1-3
+//BEGIN FOOTER - 1-4
+
+
+const Footer_1_4 = props => {
+  ///////////////////////////////////////////////////////
+  //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  return React.createElement("div", {
+    about: "Application Footer Container",
+    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-4",
+    className: "container-fluid"
+  }, React.createElement("div", {
+    about: "Application Footer Row",
+    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-4-1",
+    className: "row"
+  }, React.createElement("div", {
+    about: "Application Footer Column",
+    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-4-1-1",
+    className: "col"
+  }, React.createElement("div", {
+    about: "Application Footer Column Container",
+    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-4-1-1-1"
+  }, React.createElement("p", {
+    about: "Test Ingredient Container",
+    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-4-1-1-1-1",
+    className: "standard_literal_paragraph_container"
+  })))));
+}; //END FOOTER - 1-4
 
 /***/ }),
 
@@ -38746,13 +38875,18 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-const Application_Internet_And_Businesses_Online_Blogging_Test_BlogApplication_1_0_1 = __webpack_require__(/*! ../Blogging/Application_Internet_And_Businesses_Online-Blogging_Test_BlogApplication_1_0 */ "./source/1. Applications/Internet and Businesses Online/Blogging/Application_Internet_And_Businesses_Online-Blogging_Test_BlogApplication_1_0.tsx"); //DECLARE FACTORY METHOD
+const Application_Internet_And_Businesses_Online_Blogging_Test_BlogApplication_1_0_1 = __webpack_require__(/*! ../Blogging/Application_Internet_And_Businesses_Online-Blogging_Test_BlogApplication_1_0 */ "./source/1. Applications/Internet and Businesses Online/Blogging/Application_Internet_And_Businesses_Online-Blogging_Test_BlogApplication_1_0.tsx");
+
+const Application_Internet_And_Businesses_Online_Site_Promotion_Test_BlogApplication_Menu_1_0_1 = __webpack_require__(/*! ../Site Promotion/Application_Internet_And_Businesses_Online-Site_Promotion_Test_BlogApplication_Menu_1_0 */ "./source/1. Applications/Internet and Businesses Online/Site Promotion/Application_Internet_And_Businesses_Online-Site_Promotion_Test_BlogApplication_Menu_1_0.tsx"); //DECLARE FACTORY METHOD
 
 
 const Application = props => {
   switch (props.ApplicationName != undefined && props.ApplicationName != null && props.ApplicationName.toLowerCase()) {
     case "application_internet_and_businesses_online-blogging_test_blogapplication_1_0":
       return new Application_Internet_And_Businesses_Online_Blogging_Test_BlogApplication_1_0_1.default(props);
+
+    case "application_internet_and_businesses_online-site_promotion_test_blogapplication_menu_1_0":
+      return Application_Internet_And_Businesses_Online_Site_Promotion_Test_BlogApplication_Menu_1_0_1.default(props);
   }
 };
 
@@ -38841,12 +38975,10 @@ class Container_1_1 extends React.Component {
 
 
   render() {
-    return React.createElement(TemplateFactory_1.default, {
-      ApplicationName: this.props.ApplicationName,
-      NavigationLinks: this.state.NavigationLinks,
+    return React.createElement(TemplateFactory_1.default, Object.assign({}, this.props, {
       RenderID: this.screenTemplate,
-      RouteID: this.props.RouteID
-    });
+      NavigationLinks: this.state.NavigationLinks
+    }));
   }
 
 }
@@ -38932,12 +39064,10 @@ class Container_1_1 extends React.Component {
 
 
   render() {
-    return React.createElement(TemplateFactory_1.default, {
-      ApplicationName: this.props.ApplicationName,
-      NavigationLinks: this.state.NavigationLinks,
+    return React.createElement(TemplateFactory_1.default, Object.assign({}, this.props, {
       RenderID: this.screenTemplate,
-      RouteID: this.props.RouteID
-    });
+      NavigationLinks: this.state.NavigationLinks
+    }));
   }
 
 }
@@ -39023,13 +39153,10 @@ class Container_1_1 extends React.Component {
 
 
   render() {
-    console.log("Screen fired Home");
-    return React.createElement(TemplateFactory_1.default, {
-      ApplicationName: this.props.ApplicationName,
-      NavigationLinks: this.state.NavigationLinks,
+    return React.createElement(TemplateFactory_1.default, Object.assign({}, this.props, {
       RenderID: this.screenTemplate,
-      RouteID: this.props.RouteID
-    });
+      NavigationLinks: this.state.NavigationLinks
+    }));
   }
 
 }
@@ -39101,27 +39228,48 @@ const Container_1_1 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
+  const templateKey = "About";
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-1"
-  }, React.createElement(Header_1_2, null), React.createElement(Body_1_3, null), React.createElement(Footer_1_4, null));
+    about: `${templateKey} Container`,
+    id: `Standard_PlaceHolder_1_0_${templateKey}_Standard_Div_1-1-1`
+  }, React.createElement(Header_1_2, Object.assign({}, props, {
+    TemplateKey: templateKey
+  })), React.createElement(Body_1_3, Object.assign({}, props, {
+    TemplateKey: templateKey
+  })), React.createElement(Footer_1_4, Object.assign({}, props, {
+    TemplateKey: templateKey
+  })));
 };
 
 exports.default = Container_1_1; //END CONTAINER - 1-1
 //BEGIN HEADER - 1-2
 
 const Header_1_2 = props => {
-  const pieceMenuRenderID = "Piece_Internet_And_Businesses_Online_Site_Promotion_Blogging_Test_Navigation_Menu_1_0"; //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  const pieceMenuRenderID = ""; //COMPONENT CONTENT
 
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2",
+    about: `${props.TemplateKey} Header`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2`,
     className: "container-fluid"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1",
+    about: `${props.TemplateKey} Header Row`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1`,
     className: "row"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1-1",
+    about: `${props.TemplateKey} Header Column`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1-1`,
     className: "col"
-  }, React.createElement("p", null, "About Template Header"))));
+  }, React.createElement("div", {
+    about: `${props.TemplateKey} Header Column Container`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1-1-1`
+  }, React.createElement("p", {
+    about: "Test Ingredient Container",
+    id: "Standard_PlaceHolder_1_0_About_Standard_Div_1-1-2-1-1-1-1",
+    className: "standard_literal_paragraph_container"
+  }, "About Template Header")))));
 }; //END HEADER - 1-2
 //BEGIN BODY - 1-3
 
@@ -39130,16 +39278,28 @@ const Body_1_3 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
+  const pieceMenuRenderID = ""; //COMPONENT CONTENT
+
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3",
+    about: `${props.TemplateKey} Body`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3`,
     className: "container-fluid"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3-1",
+    about: `${props.TemplateKey} Body Row`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1`,
     className: "row"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3-1-1",
+    about: `${props.TemplateKey} Body Column`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1`,
     className: "col"
-  }, React.createElement("p", null, "About Template Body"))));
+  }, React.createElement("div", {
+    about: `${props.TemplateKey} Body Column Container`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1-1`
+  }, React.createElement("p", {
+    about: "Test Ingredient Container",
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1-1-1`,
+    className: "standard_literal_paragraph_container"
+  }, "About Template Body")))));
 }; //END BODY - 1-3
 //BEGIN FOOTER - 1-4
 
@@ -39148,16 +39308,28 @@ const Footer_1_4 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
+  const pieceMenuRenderID = ""; //COMPONENT CONTENT
+
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4",
+    about: `${props.TemplateKey} Footer`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4`,
     className: "container-fluid"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4-1",
+    about: `${props.TemplateKey} Footer Row`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1`,
     className: "row"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4-1-1",
+    about: `${props.TemplateKey} Footer Column`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1`,
     className: "col"
-  }, React.createElement("p", null, "About Template Footer"))));
+  }, React.createElement("div", {
+    about: `${props.TemplateKey} Footer Column Container`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1-1`
+  }, React.createElement("p", {
+    about: "Test Ingredient Container",
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1-1-1`,
+    className: "standard_literal_paragraph_container"
+  }, "About Template Footer")))));
 }; //END FOOTER - 1-4
 
 /***/ }),
@@ -39183,27 +39355,48 @@ const Container_1_1 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
+  const templateKey = "Contact";
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-1"
-  }, React.createElement(Header_1_2, null), React.createElement(Body_1_3, null), React.createElement(Footer_1_4, null));
+    about: `${templateKey} Container`,
+    id: `Standard_PlaceHolder_1_0_${templateKey}_Standard_Div_1-1-1`
+  }, React.createElement(Header_1_2, Object.assign({}, props, {
+    TemplateKey: templateKey
+  })), React.createElement(Body_1_3, Object.assign({}, props, {
+    TemplateKey: templateKey
+  })), React.createElement(Footer_1_4, Object.assign({}, props, {
+    TemplateKey: templateKey
+  })));
 };
 
 exports.default = Container_1_1; //END CONTAINER - 1-1
 //BEGIN HEADER - 1-2
 
 const Header_1_2 = props => {
-  const pieceMenuRenderID = "Piece_Internet_And_Businesses_Online_Site_Promotion_Blogging_Test_Navigation_Menu_1_0"; //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  const pieceMenuRenderID = ""; //COMPONENT CONTENT
 
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2",
+    about: `${props.TemplateKey} Header`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2`,
     className: "container-fluid"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1",
+    about: `${props.TemplateKey} Header Row`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1`,
     className: "row"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1-1",
+    about: `${props.TemplateKey} Header Column`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1-1`,
     className: "col"
-  }, React.createElement("p", null, "Contact Template Header"))));
+  }, React.createElement("div", {
+    about: `${props.TemplateKey} Header Column Container`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1-1-1`
+  }, React.createElement("p", {
+    about: "Test Ingredient Container",
+    id: "Standard_PlaceHolder_1_0_Contact_Standard_Div_1-1-2-1-1-1-1",
+    className: "standard_literal_paragraph_container"
+  }, "Contact Template Header")))));
 }; //END HEADER - 1-2
 //BEGIN BODY - 1-3
 
@@ -39212,16 +39405,28 @@ const Body_1_3 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
+  const pieceMenuRenderID = ""; //COMPONENT CONTENT
+
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3",
+    about: `${props.TemplateKey} Body`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3`,
     className: "container-fluid"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3-1",
+    about: `${props.TemplateKey} Body Row`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1`,
     className: "row"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3-1-1",
+    about: `${props.TemplateKey} Body Column`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1`,
     className: "col"
-  }, React.createElement("p", null, "Contact Template Body"))));
+  }, React.createElement("div", {
+    about: `${props.TemplateKey} Body Column Container`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1-1`
+  }, React.createElement("p", {
+    about: "Test Ingredient Container",
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1-1-1`,
+    className: "standard_literal_paragraph_container"
+  }, "Contact Template Body")))));
 }; //END BODY - 1-3
 //BEGIN FOOTER - 1-4
 
@@ -39230,16 +39435,28 @@ const Footer_1_4 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
+  const pieceMenuRenderID = ""; //COMPONENT CONTENT
+
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4",
+    about: `${props.TemplateKey} Footer`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4`,
     className: "container-fluid"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4-1",
+    about: `${props.TemplateKey} Footer Row`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1`,
     className: "row"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4-1-1",
+    about: `${props.TemplateKey} Footer Column`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1`,
     className: "col"
-  }, React.createElement("p", null, "Contact Template Footer"))));
+  }, React.createElement("div", {
+    about: `${props.TemplateKey} Footer Column Container`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1-1`
+  }, React.createElement("p", {
+    about: "Test Ingredient Container",
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1-1-1`,
+    className: "standard_literal_paragraph_container"
+  }, "Contact Template Footer")))));
 }; //END FOOTER - 1-4
 
 /***/ }),
@@ -39265,27 +39482,48 @@ const Container_1_1 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
+  const templateKey = "Home";
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-1"
-  }, React.createElement(Header_1_2, null), React.createElement(Body_1_3, null), React.createElement(Footer_1_4, null));
+    about: `${templateKey} Container`,
+    id: `Standard_PlaceHolder_1_0_${templateKey}_Standard_Div_1-1-1`
+  }, React.createElement(Header_1_2, Object.assign({}, props, {
+    TemplateKey: templateKey
+  })), React.createElement(Body_1_3, Object.assign({}, props, {
+    TemplateKey: templateKey
+  })), React.createElement(Footer_1_4, Object.assign({}, props, {
+    TemplateKey: templateKey
+  })));
 };
 
 exports.default = Container_1_1; //END CONTAINER - 1-1
 //BEGIN HEADER - 1-2
 
 const Header_1_2 = props => {
-  const pieceMenuRenderID = "Piece_Internet_And_Businesses_Online_Site_Promotion_Blogging_Test_Navigation_Menu_1_0"; //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  //COMPONENT CONTENT
+  ///////////////////////////////////////////////////////
+  const pieceMenuRenderID = ""; //COMPONENT CONTENT
 
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2",
+    about: `${props.TemplateKey} Header`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2`,
     className: "container-fluid"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1",
+    about: `${props.TemplateKey} Header Row`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1`,
     className: "row"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-2-1-1",
+    about: `${props.TemplateKey} Header Column`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1-1`,
     className: "col"
-  }, React.createElement("p", null, "Home Template Header"))));
+  }, React.createElement("div", {
+    about: `${props.TemplateKey} Header Column Container`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-2-1-1-1`
+  }, React.createElement("p", {
+    about: "Test Ingredient Container",
+    id: "Standard_PlaceHolder_1_0_Home_Standard_Div_1-1-2-1-1-1-1",
+    className: "standard_literal_paragraph_container"
+  }, "Home Template Header")))));
 }; //END HEADER - 1-2
 //BEGIN BODY - 1-3
 
@@ -39294,16 +39532,28 @@ const Body_1_3 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
+  const pieceMenuRenderID = ""; //COMPONENT CONTENT
+
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3",
+    about: `${props.TemplateKey} Body`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3`,
     className: "container-fluid"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3-1",
+    about: `${props.TemplateKey} Body Row`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1`,
     className: "row"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-3-1-1",
+    about: `${props.TemplateKey} Body Column`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1`,
     className: "col"
-  }, React.createElement("p", null, "Home Template Body"))));
+  }, React.createElement("div", {
+    about: `${props.TemplateKey} Body Column Container`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1-1`
+  }, React.createElement("p", {
+    about: "Test Ingredient Container",
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-3-1-1-1-1`,
+    className: "standard_literal_paragraph_container"
+  }, "Home Template Body")))));
 }; //END BODY - 1-3
 //BEGIN FOOTER - 1-4
 
@@ -39312,16 +39562,28 @@ const Footer_1_4 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
+  const pieceMenuRenderID = ""; //COMPONENT CONTENT
+
   return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4",
+    about: `${props.TemplateKey} Footer`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4`,
     className: "container-fluid"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4-1",
+    about: `${props.TemplateKey} Footer Row`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1`,
     className: "row"
   }, React.createElement("div", {
-    id: "InternetAndBusinessesOnline_Blogging_1_0_1_Standard_Div_1-1-4-1-1",
+    about: `${props.TemplateKey} Footer Column`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1`,
     className: "col"
-  }, React.createElement("p", null, "Home Template Footer"))));
+  }, React.createElement("div", {
+    about: `${props.TemplateKey} Footer Column Container`,
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1-1`
+  }, React.createElement("p", {
+    about: "Test Ingredient Container",
+    id: `Standard_PlaceHolder_1_0_${props.TemplateKey}_Standard_Div_1-1-4-1-1-1-1`,
+    className: "standard_literal_paragraph_container"
+  }, "Home Template Footer")))));
 }; //END FOOTER - 1-4
 
 /***/ }),
@@ -39365,70 +39627,6 @@ const TemplateFactory = props => {
 };
 
 exports.default = TemplateFactory;
-
-/***/ }),
-
-/***/ "./source/4. Pieces/Internet and Businesses Online/Site Promotion/Piece_Internet_And_Businesses_Online-Site_Promotion_Test_Navigation_Menu_1_0.tsx":
-/*!*********************************************************************************************************************************************************!*\
-  !*** ./source/4. Pieces/Internet and Businesses Online/Site Promotion/Piece_Internet_And_Businesses_Online-Site_Promotion_Test_Navigation_Menu_1_0.tsx ***!
-  \*********************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-}); //IMPORT REACT STUFF
-
-const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
-
-const ScreenFactory_1 = __webpack_require__(/*! ../../../2. Screens/Internet and Businesses Online/Web Development/ScreenFactory */ "./source/2. Screens/Internet and Businesses Online/Web Development/ScreenFactory.tsx"); //BEGIN CONTAINER - 1-1
-
-
-const Container_1_1 = props => {
-  ///////////////////////////////////////////////////////
-  //COMPONENT CONTENT
-  ///////////////////////////////////////////////////////
-  return React.createElement("div", {
-    id: "InternetAndBusinessesOnline_SitePromotion_1_0_1_Standard_Div_1-1-1"
-  }, React.createElement(Body_1_3, {
-    ApplicationName: props.ApplicationName,
-    NavigationLinks: props.NavigationLinks,
-    RenderID: props.RenderID
-  }));
-};
-
-exports.default = Container_1_1; //END CONTAINER - 1-1
-//BEGIN BODY - 1-3
-
-const Body_1_3 = props => {
-  ///////////////////////////////////////////////////////
-  //COMPONENT CONTENT
-  ///////////////////////////////////////////////////////
-  return React.createElement(react_router_dom_1.BrowserRouter, null, React.createElement("div", null, React.createElement("ul", null, props.NavigationLinks != undefined && props.NavigationLinks.map((item, index) => {
-    return React.createElement("li", {
-      key: index
-    }, React.createElement(react_router_dom_1.Link, {
-      to: item.link
-    }, item.name));
-  })), props.NavigationLinks != undefined && props.NavigationLinks.map((item, index) => {
-    return React.createElement(react_router_dom_1.Route, {
-      key: index,
-      exact: true,
-      path: item.link,
-      render: () => React.createElement(ScreenFactory_1.default, {
-        ApplicationName: props.ApplicationName,
-        NavigationLinks: props.NavigationLinks,
-        RenderID: item.renderID,
-        RouteID: props.RouteID
-      })
-    });
-  })));
-}; //END BODY - 1-3
 
 /***/ }),
 

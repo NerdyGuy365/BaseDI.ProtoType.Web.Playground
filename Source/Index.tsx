@@ -32,8 +32,7 @@ export {
 //END APPLICATION STARTUP - 0-0
 
 //BEGIN RENDERING APPLICATION
-ReactDOM.render(
-    <ApplicationStartUp ApplicationName={applicationName} />, document.getElementById('app'))
+ReactDOM.render(<ApplicationStartUp ApplicationName={applicationName} />, document.getElementById('app'))
 
 //END RENDERING APPLICATION
 

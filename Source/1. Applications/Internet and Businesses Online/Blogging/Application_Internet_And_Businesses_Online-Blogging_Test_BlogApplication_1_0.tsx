@@ -10,8 +10,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 //IMPORT APPLICATION COMPONENTS
 import { Global, IGlobalContainerProps, IGlobalHeaderProps, IGlobalBodyProps, IGlobalFooterProps } from '../../../Global';
-import { default as ScreenFactory } from '../../../2. Screens/Internet and Businesses Online/Web Development/ScreenFactory';
-import { default as Piece_Internet_And_Businesses_Online_Site_Promotion_Test_Navigation_Menu_1_0 } from '../../../4. Pieces/Internet and Businesses Online/Site Promotion/Piece_Internet_And_Businesses_Online-Site_Promotion_Test_Navigation_Menu_1_0'
+import { default as ApplicationFactory } from '../../../1. Applications/Internet and Businesses Online/Web Development/ApplicationFactory';
 
 //BEGIN CONTAINER - 1-1
 class Container_1_1 extends React.Component<IGlobalContainerProps, any> {
@@ -27,10 +26,10 @@ class Container_1_1 extends React.Component<IGlobalContainerProps, any> {
         //WIRE EVENTS
 
         //SET DEFAULTS        
-        this.startUpScreen = "Screen_Internet_And_Businesses_Online-Blogging_Test_Blog_Home_1_0";
+        this.startUpComponent = "Application_Internet_And_Businesses_Online-Site_Promotion_Test_BlogApplication_Menu_1_0";
     }
 
-    startUpScreen: string;
+    startUpComponent: string;
 
     ///////////////////////////////////////////////////////
     //Standalone Helpers
@@ -64,45 +63,15 @@ class Container_1_1 extends React.Component<IGlobalContainerProps, any> {
     ///////////////////////////////////////////////////////
     render()
     {
-        return (<Header_1_2
-                    ApplicationName={this.props.ApplicationName}
+        return (<ApplicationFactory
+                    ApplicationName={this.startUpComponent}
                     NavigationLinks={this.state.NavigationLinks}
-                    RouteID={this.props.RouteID} />)
+                    />)
     }
 }
 
 export default Container_1_1;
 //END CONTAINER - 1-1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//BEGIN HEADER - 1-2
-const Header_1_2 = (props: IGlobalHeaderProps) => {
-    //COMPONENT CONTENT
-    return (<Piece_Internet_And_Businesses_Online_Site_Promotion_Test_Navigation_Menu_1_0
-                ApplicationName={props.ApplicationName} 
-                NavigationLinks={props.NavigationLinks}
-                RenderID={props.RenderID}
-           />)
-}
-//END HEADER - 1-2
-
 
 
 
