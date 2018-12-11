@@ -180,7 +180,11 @@ interface IGlobalContainerProps {
     TemplateKey?: string,
     NavigationLinks?: { name: string, link: string, renderID: string }[],
     RenderID?:string,
-    RouteID?: string
+    RouteID?: string,
+    Description?: string,
+    TagID?: string,
+    Results?: [],
+    RouterDetails?: { history: any, location: any, match: any, children: any, staticContext: any }
 }
 
 export {
@@ -192,7 +196,11 @@ interface IGlobalHeaderProps {
     TemplateKey?: string,
     NavigationLinks?: { name: string, link: string, renderID: string }[],
     RenderID?:string,
-    RouteID?: string
+    RouteID?: string,
+    Description?: string,
+    TagID?: string,
+    Results?: [],
+    RouterDetails?: { history: any, location: any, match: any, children: any, staticContext: any}
 }
 
 export {
@@ -204,7 +212,11 @@ interface IGlobalBodyProps {
     TemplateKey?: string,
     NavigationLinks?: { name: string, link: string, renderID: string }[],
     RenderID?:string,
-    RouteID?: string
+    RouteID?: string,
+    Description?: string,
+    TagID?: string,
+    Results?: [],
+    RouterDetails?: { history: any, location: any, match: any, children: any, staticContext: any }
 }
 
 export {
@@ -216,7 +228,11 @@ interface IGlobalFooterProps {
     TemplateKey?: string,
     NavigationLinks?: { name: string, link: string, renderID: string }[],
     RenderID?:string,
-    RouteID?: string
+    RouteID?: string,
+    Description?: string,
+    TagID?: string,
+    Results?: [],
+    RouterDetails?: { history: any, location: any, match: any, children: any, staticContext: any}
 }
 
 export {

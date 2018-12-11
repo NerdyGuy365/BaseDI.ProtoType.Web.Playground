@@ -16,7 +16,7 @@ const Container_1_1 = (props: IGlobalContainerProps) => {
     //COMPONENT CONTENT
     ///////////////////////////////////////////////////////
     const templateKey:string = "About";
-
+    
     return (
         <div about={`${templateKey} Container`} id={`Standard_PlaceHolder_1_0_${templateKey}_Standard_Div_1-1-1`}>
             <Header_1_2 {...props} TemplateKey={templateKey} />

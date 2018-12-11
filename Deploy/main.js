@@ -38746,10 +38746,43 @@ const Container_1_1 = props => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
-  return React.createElement(react_router_dom_1.BrowserRouter, null, React.createElement("div", {
-    about: "Application Container",
-    id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-1"
-  }, React.createElement(Header_1_2, Object.assign({}, props)), React.createElement(Body_1_3, Object.assign({}, props)), React.createElement(Footer_1_4, Object.assign({}, props))));
+  const Main = react_router_dom_1.withRouter(({
+    history,
+    location,
+    match,
+    children,
+    staticContext
+  }) => {
+    return React.createElement("div", {
+      about: "Application Container",
+      id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-1"
+    }, React.createElement(Header_1_2, Object.assign({}, props, {
+      RouterDetails: {
+        history,
+        location,
+        match,
+        children,
+        staticContext
+      }
+    })), React.createElement(Body_1_3, Object.assign({}, props, {
+      RouterDetails: {
+        history,
+        location,
+        match,
+        children,
+        staticContext
+      }
+    })), React.createElement(Footer_1_4, Object.assign({}, props, {
+      RouterDetails: {
+        history,
+        location,
+        match,
+        children,
+        staticContext
+      }
+    })));
+  });
+  return React.createElement(react_router_dom_1.BrowserRouter, null, React.createElement(Main, null));
 };
 
 exports.default = Container_1_1; //END CONTAINER - 1-1
@@ -38825,7 +38858,8 @@ const Body_1_3 = props => {
         ApplicationName: props.ApplicationName,
         NavigationLinks: props.NavigationLinks,
         RenderID: item.renderID,
-        RouteID: props.RouteID
+        RouteID: props.RouteID,
+        RouterDetails: props.RouterDetails
       })
     });
   })))));
