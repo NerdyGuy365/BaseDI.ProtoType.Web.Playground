@@ -1,8 +1,11 @@
 ﻿//IMPORT REACT STUFF
 import * as React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { Provider } from 'react-redux';
 
 //IMPORT EXTRA STUFF
+import { createStore, applyMiddleware, compose } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 //IMPORT APPLICATION STYLES
 
@@ -22,20 +25,30 @@ class Container_1_1 extends React.Component<IGlobalContainerProps, any> {
     {
         super(props);
 
-        this.state = { NavigationLinks: this.Web_Development_Programming_Helper_ReadMockLinks() }
+        this.state = { NavigationLinks: this.Software_Programming_Helper_HandleReadMockLinks() }
+
+        this.stateStore = createStore(this.Software_Programming_Helper_HandleStateStore, composeWithDevTools(applyMiddleware()));
 
         //WIRE EVENTS
 
         //SET DEFAULTS        
-        this.startUpComponent = ApplicationNameEnum.Application_Internet_And_Businesses_Online_Demo_Blog_Web_Design_1_0;
+        this.sitePromoter = ApplicationNameEnum.Application_Internet_And_Businesses_Online_Demo_Blog_Site_Promotion_1_0;
     }
 
-    startUpComponent: string;
+    sitePromoter: string;
+    stateStore:any; 
+
+    ///////////////////////////////////////////////////////
+    //State Helpers
+    ///////////////////////////////////////////////////////
+    Software_Programming_Helper_HandleStateStore = (oldState = {}, action) => {
+        return []
+    }
 
     ///////////////////////////////////////////////////////
     //Standalone Helpers
     ///////////////////////////////////////////////////////
-    Web_Development_Programming_Helper_ReadMockLinks = (): { name: string, link: string, renderID: string }[] => {
+    Software_Programming_Helper_HandleReadMockLinks = (): { name: string, link: string, renderID: string }[] => {
         let navigationLinks = [
             { name: "Home", link: "/", renderID: ScreenNameEnum.Screen_Internet_And_Businesses_Online_Demo_Blog_Home_Blogging_1_0 },
             { name: "About", link: "/About", renderID: ScreenNameEnum.Screen_Internet_And_Businesses_Online_Demo_Blog_About_Blogging_1_0 },
@@ -44,11 +57,15 @@ class Container_1_1 extends React.Component<IGlobalContainerProps, any> {
 
         return navigationLinks;
     }
-
+    
+    
     ///////////////////////////////////////////////////////
     //ReactJS Proprietary 
     ///////////////////////////////////////////////////////
-    async componentDidMount() {
+    async componentDidMount() 
+    {
+        
+                        
         //const response = await axios.get(`${Global().APIMockUrl}/APIVERB`);
 
         //setTimeout(() => {
@@ -64,10 +81,13 @@ class Container_1_1 extends React.Component<IGlobalContainerProps, any> {
     ///////////////////////////////////////////////////////
     render()
     {
-        return (<ApplicationFactory
-                    ApplicationName={this.startUpComponent}
-                    NavigationLinks={this.state.NavigationLinks}
-                    />)
+        console.log(this.sitePromoter);
+        return (<Provider store={this.stateStore}>
+                    <ApplicationFactory
+                        ApplicationName={this.sitePromoter}
+                        NavigationLinks={this.state.NavigationLinks}
+                     />            
+                </Provider>)
     }
 }
 

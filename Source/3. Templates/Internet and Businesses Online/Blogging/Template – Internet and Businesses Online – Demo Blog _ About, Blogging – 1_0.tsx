@@ -9,6 +9,7 @@ import * as React from 'react';
 
 //IMPORT APPLICATION COMPONENTS
 import { Global, IGlobalContainerProps, IGlobalHeaderProps, IGlobalBodyProps, IGlobalFooterProps } from '../../../Global';
+import { default as PieceFactory } from '../../../4. Pieces/Internet and Businesses Online/Web Development/PieceFactory';
 
 //BEGIN CONTAINER - 1-1
 const Container_1_1 = (props: IGlobalContainerProps) => {

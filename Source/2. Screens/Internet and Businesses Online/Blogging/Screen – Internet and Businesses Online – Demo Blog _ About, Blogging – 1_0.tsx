@@ -9,7 +9,7 @@ import * as React from 'react';
 
 //IMPORT SCREEN SPECIFIC COMPONENTS
 import { Global, IGlobalContainerProps, IGlobalHeaderProps, IGlobalBodyProps, IGlobalFooterProps } from '../../../Global';
-import TemplateFactory from '../../../3. Templates/Internet and Businesses Online/Web Development/TemplateFactory';
+import { default as TemplateFactory, TemplateNameEnum } from '../../../3. Templates/Internet and Businesses Online/Web Development/TemplateFactory';
 
 //BEGIN CONTAINER - 1-1
 class Container_1_1 extends React.Component<IGlobalContainerProps, any>{
@@ -24,7 +24,7 @@ class Container_1_1 extends React.Component<IGlobalContainerProps, any>{
         //WIRE EVENTS
 
         //SET DEFAULTS
-        this.screenTemplate = "Template_Internet_And_Businesses_Online-Blogging_Test_Blog_About_1_0";
+        this.screenTemplate = TemplateNameEnum.Template_Internet_And_Businesses_Online_Demo_Blog_About_Blogging_1_0;
     }
 
     screenTemplate: string;

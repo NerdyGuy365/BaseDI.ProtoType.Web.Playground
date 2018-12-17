@@ -6,7 +6,7 @@ const Global = () => {
     ///////////////////////////////////////////////////////
     //Standalone Helpers
     ///////////////////////////////////////////////////////
-    const Web_Development_Programming_Helper_ReadDomain = (url: string, subdomain: boolean): string => {
+    const Software_Programming_Helper_ReadDomain = (url: string, subdomain: boolean): string => {
         subdomain = subdomain || false;
 
         let urlTemp = url.replace(/(https?:\/\/)?(www.)?/i, '');
@@ -33,7 +33,7 @@ const Global = () => {
     ///////////////////////////////////////////////////////
     //Variables
     ///////////////////////////////////////////////////////
-    const domainName: string = Web_Development_Programming_Helper_ReadDomain(location.href, false);
+    const domainName: string = Software_Programming_Helper_ReadDomain(location.href, false);
 
     return ({
         APIMockUrl: 'https://5c0043c80296210013dc8003.mockapi.io',
@@ -184,7 +184,7 @@ interface IGlobalContainerProps {
     Description?: string,
     TagID?: string,
     Results?: [],
-    RouterDetails?: { history:any, location:any, match:any, children:any, staticContext:any }
+    RouterDetails?: { history?:any, location?:any, match?:any, children?:any, staticContext?:any }
 }
 
 export {
@@ -200,7 +200,7 @@ interface IGlobalHeaderProps {
     Description?: string,
     TagID?: string,
     Results?: [],
-    RouterDetails?: { history:any, location:any, match:any, children:any, staticContext:any }
+    RouterDetails?: { history?:any, location?:any, match?:any, children?:any, staticContext?:any }
 }
 
 export {
@@ -216,7 +216,7 @@ interface IGlobalBodyProps {
     Description?: string,
     TagID?: string,
     Results?: [],
-    RouterDetails?: { history:any, location:any, match:any, children:any, staticContext:any }
+    RouterDetails?: { history?:any, location?:any, match?:any, children?:any, staticContext?:any }
 }
 
 export {
@@ -232,7 +232,7 @@ interface IGlobalFooterProps {
     Description?: string,
     TagID?: string,
     Results?: [],
-    RouterDetails?: { history:any, location:any, match:any, children:any, staticContext:any }
+    RouterDetails?: { history?:any, location?:any, match?:any, children?:any, staticContext?:any }
 }
 
 export {
