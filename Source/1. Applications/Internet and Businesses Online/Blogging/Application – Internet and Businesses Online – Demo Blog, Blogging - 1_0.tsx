@@ -13,8 +13,8 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 //IMPORT APPLICATION COMPONENTS
 import { Global, IGlobalContainerProps, IGlobalHeaderProps, IGlobalBodyProps, IGlobalFooterProps } from '../../../Global';
-import { default as ApplicationFactory, ApplicationNameEnum } from '../../../1. Applications/Internet and Businesses Online/Web Development/ApplicationFactory';
-import { ScreenNameEnum } from '../../../2. Screens/Internet and Businesses Online/Web Development/ScreenFactory';
+import { default as ApplicationFactory, ApplicationNameEnum } from '../../../1. Applications/Computers and Technology/Programming/ApplicationFactory';
+import { ScreenNameEnum } from '../../../2. Screens/Computers and Technology/Programming/ScreenFactory';
 import { default as Software_Programming_Helper_HandleBlogManagementState_1_0 } from '../../../7. Helpers/Internet and Businesses Online/Blogging/State – Internet and Businesses Online – Demo Blog, Blogging - 1_0';
 
 //BEGIN CONTAINER - 1-1

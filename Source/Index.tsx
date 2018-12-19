@@ -12,7 +12,7 @@ import './5. Styles/Internet and Businesses Online/Web Design/Web Design - Boots
 
 
 //IMPORT APPLICATION COMPONENTS
-import { default as ApplicationFactory, ApplicationNameEnum } from './1. Applications/Internet and Businesses Online/Web Development/ApplicationFactory';
+import { default as ApplicationFactory, ApplicationNameEnum } from './1. Applications/Computers and Technology/Programming/ApplicationFactory';
 import { IGlobalContainerProps } from './Global';
 
 //APPLICATION NAME

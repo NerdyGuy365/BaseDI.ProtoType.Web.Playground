@@ -34,16 +34,12 @@
   <ItemGroup>
     <None Remove="BaseDISnippet.tsx" />
     <None Remove="Source\1. Applications\Internet and Businesses Online\Blogging\Application – Internet and Businesses Online – Demo Blog, Blogging - 1_0.tsx" />
-    <None Remove="Source\1. Applications\Internet and Businesses Online\Web Development\ApplicationFactory.tsx" />
     <None Remove="Source\2. Screens\Internet and Businesses Online\Blogging\Screen – Internet and Businesses Online – Demo Blog _ About, Blogging – 1_0.tsx" />
     <None Remove="Source\2. Screens\Internet and Businesses Online\Blogging\Screen – Internet and Businesses Online – Demo Blog _ Contact, Blogging – 1_0.tsx" />
     <None Remove="Source\2. Screens\Internet and Businesses Online\Blogging\Screen – Internet and Businesses Online – Demo Blog _ Home, Blogging – 1_0.tsx" />
-    <None Remove="Source\2. Screens\Internet and Businesses Online\Web Development\ScreenFactory.tsx" />
     <None Remove="Source\3. Templates\Internet and Businesses Online\Blogging\Template – Internet and Businesses Online – Demo Blog _ About, Blogging – 1_0.tsx" />
     <None Remove="Source\3. Templates\Internet and Businesses Online\Blogging\Template – Internet and Businesses Online – Demo Blog _ Contact, Blogging – 1_0.tsx" />
     <None Remove="Source\3. Templates\Internet and Businesses Online\Blogging\Template – Internet and Businesses Online – Demo Blog _ Home, Blogging – 1_0.tsx" />
-    <None Remove="Source\3. Templates\Internet and Businesses Online\Web Development\TemplateFactory.tsx" />
-    <None Remove="Source\4. Pieces\Internet and Businesses Online\Web Development\PieceFactory.tsx" />
     <None Remove="Source\7. Helpers\Computers and Technology\Programming\ServiceFactory.tsx" />
     <None Remove="Source\7. Helpers\Internet and Businesses Online\Blogging\State – Internet and Businesses Online – Demo Blog, Blogging - 1_0.tsx" />
     <None Remove="Source\7. Helpers\Internet and Businesses Online\Web Development\Snippet DIV Containers.tsx" />
@@ -60,16 +56,16 @@
   <ItemGroup>
     <TypeScriptCompile Include="Source\1. Applications\Internet and Businesses Online\Blogging\Application – Internet and Businesses Online – Demo Blog, Blogging - 1_0.tsx" />
     <TypeScriptCompile Include="Source\1. Applications\Internet and Businesses Online\Site Promotion\Application – Internet and Businesses Online – Demo Blog, Site Promotion - 1_0.tsx" />
-    <TypeScriptCompile Include="Source\1. Applications\Internet and Businesses Online\Web Development\ApplicationFactory.tsx" />
+    <TypeScriptCompile Include="Source\1. Applications\Computers and Technology\Programming\ApplicationFactory.tsx" />
     <TypeScriptCompile Include="Source\2. Screens\Internet and Businesses Online\Blogging\Screen – Internet and Businesses Online – Demo Blog _ About, Blogging – 1_0.tsx" />
     <TypeScriptCompile Include="Source\2. Screens\Internet and Businesses Online\Blogging\Screen – Internet and Businesses Online – Demo Blog _ Contact, Blogging – 1_0.tsx" />
     <TypeScriptCompile Include="Source\2. Screens\Internet and Businesses Online\Blogging\Screen – Internet and Businesses Online – Demo Blog _ Home, Blogging – 1_0.tsx" />
-    <TypeScriptCompile Include="Source\2. Screens\Internet and Businesses Online\Web Development\ScreenFactory.tsx" />
+    <TypeScriptCompile Include="Source\2. Screens\Computers and Technology\Programming\ScreenFactory.tsx" />
     <TypeScriptCompile Include="Source\3. Templates\Internet and Businesses Online\Blogging\Template – Internet and Businesses Online – Demo Blog _ About, Blogging – 1_0.tsx" />
     <TypeScriptCompile Include="Source\3. Templates\Internet and Businesses Online\Blogging\Template – Internet and Businesses Online – Demo Blog _ Contact, Blogging – 1_0.tsx" />
     <TypeScriptCompile Include="Source\3. Templates\Internet and Businesses Online\Blogging\Template – Internet and Businesses Online – Demo Blog _ Home, Blogging – 1_0.tsx" />
-    <TypeScriptCompile Include="Source\3. Templates\Internet and Businesses Online\Web Development\TemplateFactory.tsx" />
-    <TypeScriptCompile Include="Source\4. Pieces\Internet and Businesses Online\Web Development\PieceFactory.tsx" />
+    <TypeScriptCompile Include="Source\3. Templates\Computers and Technology\Programming\TemplateFactory.tsx" />
+    <TypeScriptCompile Include="Source\4. Pieces\Computers and Technology\Programming\PieceFactory.tsx" />
     <TypeScriptCompile Include="Source\7. Helpers\Computers and Technology\Programming\ServiceFactory.tsx" />
     <TypeScriptCompile Include="Source\7. Helpers\Internet and Businesses Online\Blogging\State – Internet and Businesses Online – Demo Blog, Blogging - 1_0.tsx" />
     <TypeScriptCompile Include="Source\7. Helpers\Internet and Businesses Online\Web Development\Snippet DIV Containers.tsx" />

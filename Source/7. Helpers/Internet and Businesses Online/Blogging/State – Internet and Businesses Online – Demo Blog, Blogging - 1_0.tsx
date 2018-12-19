@@ -13,7 +13,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 //IMPORT APPLICATION COMPONENTS
 import { Global, IGlobalContainerProps, IGlobalHeaderProps, IGlobalBodyProps, IGlobalFooterProps } from '../../../Global';
-import { ScreenNameEnum } from '../../../2. Screens/Internet and Businesses Online/Web Development/ScreenFactory';
+import { ScreenNameEnum } from '../../../2. Screens/Computers and Technology/Programming/ScreenFactory';
 
 //IMPORT STATE HELPERS
 import { default as Software_Programming_Helper_HandleArticleManagement_1_0 } from '../../../7. Helpers/Internet and Businesses Online/Blogging/Service – Internet and Businesses Online - Article Management, Blogging – 1_0';
@@ -29,7 +29,7 @@ class Software_Programming_Helper_HandleBlogManagementState_1_0
     //Class Setup
     ///////////////////////////////////////////////////////
     constructor(props: IGlobalContainerProps) {
-        this.initialState = this.Software_Programming_Helper_HandleReadMockLinks;
+        this.initialState = this.Software_Programming_Helper_HandleReadMockDefaultState;
 
         this.stateStore = createStore(
             this.Software_Programming_Helper_HandleStateStore,
@@ -68,7 +68,7 @@ class Software_Programming_Helper_HandleBlogManagementState_1_0
     ///////////////////////////////////////////////////////
     //Standalone Helpers
     ///////////////////////////////////////////////////////
-    public Software_Programming_Helper_HandleReadMockLinks =
+    public Software_Programming_Helper_HandleReadMockDefaultState =
     {
         navigationLinks: [
             { name: "Home", link: "/", renderID: ScreenNameEnum.Screen_Internet_And_Businesses_Online_Demo_Blog_Home_Blogging_1_0 },
@@ -76,7 +76,8 @@ class Software_Programming_Helper_HandleBlogManagementState_1_0
             { name: "Contact", link: "/Contact", renderID: ScreenNameEnum.Screen_Internet_And_Businesses_Online_Demo_Blog_Contact_Blogging_1_0 }
         ]
     }
-    public Software_Programming_Helper_HandleStateDispatch(state: any) {
+    public Software_Programming_Helper_HandleStateDispatch(state: any) 
+    {
         this.stateStore.dispatch(state);
     }
 }
