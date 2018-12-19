@@ -40819,59 +40819,60 @@ Object.defineProperty(exports, "__esModule", {
 
 const React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
-const react_redux_1 = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js"); //IMPORT EXTRA STUFF
-
-
-const redux_1 = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
-
-const redux_devtools_extension_1 = __webpack_require__(/*! redux-devtools-extension */ "./node_modules/redux-devtools-extension/index.js");
+const react_redux_1 = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 
 const ApplicationFactory_1 = __webpack_require__(/*! ../../../1. Applications/Internet and Businesses Online/Web Development/ApplicationFactory */ "./source/1. Applications/Internet and Businesses Online/Web Development/ApplicationFactory.tsx");
 
-const ScreenFactory_1 = __webpack_require__(/*! ../../../2. Screens/Internet and Businesses Online/Web Development/ScreenFactory */ "./source/2. Screens/Internet and Businesses Online/Web Development/ScreenFactory.tsx"); //BEGIN CONTAINER - 1-1
+const State___Internet_and_Businesses_Online___Demo_Blog__Blogging___1_0_1 = __webpack_require__(/*! ../../../7. Helpers/Internet and Businesses Online/Blogging/State – Internet and Businesses Online – Demo Blog, Blogging - 1_0 */ "./source/7. Helpers/Internet and Businesses Online/Blogging/State – Internet and Businesses Online – Demo Blog, Blogging - 1_0.tsx"); //BEGIN CONTAINER - 1-1
 
 
 class Container_1_1 extends React.Component {
+  constructor(props) {
+    super(props);
+    this.stateManager = new State___Internet_and_Businesses_Online___Demo_Blog__Blogging___1_0_1.default(props);
+  }
+
+  componentDidMount() {
+    return __awaiter(this, void 0, void 0, function* () {
+      this.stateManager.Software_Programming_Helper_HandleStateDispatch({
+        type: 'navigationLinks'
+      }); //const response = await axios.get(`${Global().APIMockUrl}/APIVERB`);
+      //setTimeout(() => {
+      //    this.setState({
+      //        todos: response.data,
+      //        loading: false
+      //    })
+      //}, 1500)
+    });
+  }
+
+  render() {
+    return React.createElement(react_redux_1.Provider, {
+      store: this.stateManager.stateStore
+    }, React.createElement(Container_1_3, Object.assign({}, this.props)));
+  }
+
+}
+
+exports.default = Container_1_1; //END CONTAINER - 1-1
+//BEGIN CONTAINER - 1-2
+
+class Container_1_2 extends React.Component {
   ///////////////////////////////////////////////////////
   //Class Setup
   ///////////////////////////////////////////////////////
   constructor(props) {
-    super(props); ///////////////////////////////////////////////////////
-    //State Helpers
-    ///////////////////////////////////////////////////////
-
-    this.Software_Programming_Helper_HandleStateStore = (oldState = {}, action) => {
-      return [];
-    }; ///////////////////////////////////////////////////////
-    //Standalone Helpers
-    ///////////////////////////////////////////////////////
-
-
-    this.Software_Programming_Helper_HandleReadMockLinks = () => {
-      let navigationLinks = [{
-        name: "Home",
-        link: "/",
-        renderID: ScreenFactory_1.ScreenNameEnum.Screen_Internet_And_Businesses_Online_Demo_Blog_Home_Blogging_1_0
-      }, {
-        name: "About",
-        link: "/About",
-        renderID: ScreenFactory_1.ScreenNameEnum.Screen_Internet_And_Businesses_Online_Demo_Blog_About_Blogging_1_0
-      }, {
-        name: "Contact",
-        link: "/Contact",
-        renderID: ScreenFactory_1.ScreenNameEnum.Screen_Internet_And_Businesses_Online_Demo_Blog_Contact_Blogging_1_0
-      }];
-      return navigationLinks;
-    };
-
+    super(props);
     this.state = {
-      NavigationLinks: this.Software_Programming_Helper_HandleReadMockLinks()
-    };
-    this.stateStore = redux_1.createStore(this.Software_Programming_Helper_HandleStateStore, redux_devtools_extension_1.composeWithDevTools(redux_1.applyMiddleware())); //WIRE EVENTS
+      navigationLinks: []
+    }; //WIRE EVENTS
     //SET DEFAULTS        
 
     this.sitePromoter = ApplicationFactory_1.ApplicationNameEnum.Application_Internet_And_Businesses_Online_Demo_Blog_Site_Promotion_1_0;
   } ///////////////////////////////////////////////////////
+  //Standalone Helpers
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////
   //ReactJS Proprietary 
   ///////////////////////////////////////////////////////
 
@@ -40891,18 +40892,16 @@ class Container_1_1 extends React.Component {
 
 
   render() {
-    console.log(this.sitePromoter);
-    return React.createElement(react_redux_1.Provider, {
-      store: this.stateStore
-    }, React.createElement(ApplicationFactory_1.default, {
-      ApplicationName: this.sitePromoter,
-      NavigationLinks: this.state.NavigationLinks
+    return React.createElement(ApplicationFactory_1.default, Object.assign({}, this.props, {
+      ApplicationName: this.sitePromoter
     }));
   }
 
-}
+} //END CONTAINER - 1-2
+//BEGIN CONTAINER - 1-3
 
-exports.default = Container_1_1; //END CONTAINER - 1-1
+
+const Container_1_3 = react_redux_1.connect(State___Internet_and_Businesses_Online___Demo_Blog__Blogging___1_0_1.default.Software_Programming_Helper_HandleStateConnection)(Container_1_2); //END CONTAINER - 1-3
 
 /***/ }),
 
@@ -40927,7 +40926,7 @@ const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_m
 const ScreenFactory_1 = __webpack_require__(/*! ../../../2. Screens/Internet and Businesses Online/Web Development/ScreenFactory */ "./source/2. Screens/Internet and Businesses Online/Web Development/ScreenFactory.tsx"); //BEGIN CONTAINER - 1-1
 
 
-const Container_1_1 = props => {
+const Container_1_1 = (...props) => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
@@ -40941,31 +40940,7 @@ const Container_1_1 = props => {
     return React.createElement("div", {
       about: "Application Container",
       id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-1"
-    }, React.createElement(Header_1_2, Object.assign({}, props, {
-      RouterDetails: {
-        history,
-        location,
-        match,
-        children,
-        staticContext
-      }
-    })), React.createElement(Body_1_3, Object.assign({}, props, {
-      RouterDetails: {
-        history,
-        location,
-        match,
-        children,
-        staticContext
-      }
-    })), React.createElement(Footer_1_4, Object.assign({}, props, {
-      RouterDetails: {
-        history,
-        location,
-        match,
-        children,
-        staticContext
-      }
-    })));
+    }, React.createElement(Header_1_2, Object.assign({}, props)), React.createElement(Body_1_3, Object.assign({}, props)), React.createElement(Footer_1_4, Object.assign({}, props)));
   });
   return React.createElement(react_router_dom_1.BrowserRouter, null, React.createElement(Main, null));
 };
@@ -40973,8 +40948,9 @@ const Container_1_1 = props => {
 exports.default = Container_1_1; //END CONTAINER - 1-1
 //BEGIN HEADER - 1-2
 
-const Header_1_2 = props => {
+const Header_1_2 = (...props) => {
   //COMPONENT CONTENT
+  console.log(props[0][0]);
   return React.createElement("div", {
     about: "Application Header Container",
     id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-2",
@@ -40996,7 +40972,7 @@ const Header_1_2 = props => {
     about: "Menu Ingredient Row",
     id: "Navigation_Menu_1_0_Application_Standard_Div_1-1-3-1",
     className: "row"
-  }, props.NavigationLinks != undefined && props.NavigationLinks.map((item, index) => {
+  }, props[0][0] && props[0][0].navigationLinks != undefined && props[0][0].navigationLinks.map((item, index) => {
     return React.createElement("div", {
       about: "Menu Ingredient Column",
       key: index,
@@ -41016,7 +40992,7 @@ const Header_1_2 = props => {
 //BEGIN BODY - 1-3
 
 
-const Body_1_3 = props => {
+const Body_1_3 = (...props) => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
@@ -41034,7 +41010,7 @@ const Body_1_3 = props => {
     about: "Application Body Column Container",
     id: "Standard_PlaceHolder_1_0_Application_Standard_Div_1-1-3-1-1-1-1",
     className: "standard_div_container"
-  }, props.NavigationLinks != undefined && props.NavigationLinks.map((item, index) => {
+  }, props[0][0] && props[0][0].navigationLinks != undefined && props[0][0].navigationLinks.map((item, index) => {
     return React.createElement(react_router_dom_1.Route, {
       key: index,
       exact: true,
@@ -41045,10 +41021,10 @@ const Body_1_3 = props => {
         match,
         staticContext
       }) => React.createElement(ScreenFactory_1.default, {
-        ApplicationName: props.ApplicationName,
-        NavigationLinks: props.NavigationLinks,
+        ApplicationName: props[0].ApplicationName,
+        NavigationLinks: props[0].navigationLinks,
         RenderID: item.renderID,
-        RouteID: props.RouteID,
+        RouteID: props[0].RouteID,
         RouterDetails: {
           history: history,
           location: location,
@@ -41063,7 +41039,7 @@ const Body_1_3 = props => {
 //BEGIN FOOTER - 1-4
 
 
-const Footer_1_4 = props => {
+const Footer_1_4 = (...props) => {
   ///////////////////////////////////////////////////////
   //COMPONENT CONTENT
   ///////////////////////////////////////////////////////
@@ -41916,6 +41892,347 @@ var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/a
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
+
+/***/ }),
+
+/***/ "./source/7. Helpers/Internet and Businesses Online/Blogging/Service – Internet and Businesses Online - Article Management, Blogging – 1_0.tsx":
+/*!*****************************************************************************************************************************************************!*\
+  !*** ./source/7. Helpers/Internet and Businesses Online/Blogging/Service – Internet and Businesses Online - Article Management, Blogging – 1_0.tsx ***!
+  \*****************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __awaiter = this && this.__awaiter || function (thisArg, _arguments, P, generator) {
+  return new (P || (P = Promise))(function (resolve, reject) {
+    function fulfilled(value) {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    }
+
+    function rejected(value) {
+      try {
+        step(generator["throw"](value));
+      } catch (e) {
+        reject(e);
+      }
+    }
+
+    function step(result) {
+      result.done ? resolve(result.value) : new P(function (resolve) {
+        resolve(result.value);
+      }).then(fulfilled, rejected);
+    }
+
+    step((generator = generator.apply(thisArg, _arguments || [])).next());
+  });
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}); //SET TARGET MARKET INFORMATION
+
+const marketMainCategory = "Internet and Businesses Online";
+const marketNicheCategory = "Blogging"; //BEGIN SERVICES
+
+class Software_Programming_Helper_HandleArticleManagement_1_0 {
+  ///////////////////////////////////////////////////////
+  //----> Create Methods
+  ///////////////////////////////////////////////////////
+  Software_Programming_HandleCreate_SaveArticle() {
+    return __awaiter(this, void 0, void 0, function* () {
+      try {//Step: DEFINE client side validation rules.
+        //Step: DEFINE client side validation error messages.
+        //Step: VALIDATE client side error messages.
+        //Step: PERFORM task
+        //Step: RESPOND back
+      } catch (errors) {}
+    });
+  } ///////////////////////////////////////////////////////
+  //----> Read Methods
+  ///////////////////////////////////////////////////////
+  //One Item
+
+
+  Software_Programming_HandleRead_GetArticleByID() {
+    return __awaiter(this, void 0, void 0, function* () {
+      try {//Step: DEFINE client side validation rules.
+        //Step: DEFINE client side validation error messages.
+        //Step: VALIDATE client side error messages.
+        //Step: PERFORM task
+        //Step: RESPOND back
+      } catch (errors) {}
+    });
+  }
+
+  Software_Programming_HandleRead_GetArticleCategories() {
+    return __awaiter(this, void 0, void 0, function* () {
+      try {//Step: DEFINE client side validation rules.
+        //Step: DEFINE client side validation error messages.
+        //Step: VALIDATE client side error messages.
+        //Step: PERFORM task
+        //Step: RESPOND back
+      } catch (errors) {}
+    });
+  } //Multiple Items
+
+
+  Software_Programming_HandleRead_GetArticlesAny() {
+    return __awaiter(this, void 0, void 0, function* () {
+      try {//Step: DEFINE client side validation rules.
+        //Step: DEFINE client side validation error messages.
+        //Step: VALIDATE client side error messages.
+        //Step: PERFORM task
+        //Step: RESPOND back
+      } catch (errors) {}
+    });
+  }
+
+  Software_Programming_HandleRead_GetArticlesBySearchPhrase() {
+    return __awaiter(this, void 0, void 0, function* () {
+      try {//Step: DEFINE client side validation rules.
+        //Step: DEFINE client side validation error messages.
+        //Step: VALIDATE client side error messages.
+        //Step: PERFORM task
+        //Step: RESPOND back
+      } catch (errors) {}
+    });
+  } ///////////////////////////////////////////////////////
+  //----> Update Methods
+  ///////////////////////////////////////////////////////
+
+
+  Software_Programming_HandleUpdate_EditArticle() {
+    return __awaiter(this, void 0, void 0, function* () {
+      try {//Step: DEFINE client side validation rules.
+        //Step: DEFINE client side validation error messages.
+        //Step: VALIDATE client side error messages.
+        //Step: PERFORM task
+        //Step: RESPOND back
+      } catch (errors) {}
+    });
+  } ///////////////////////////////////////////////////////
+  //----> Delete Methods
+  ///////////////////////////////////////////////////////
+
+
+  Software_Programming_HandleDelete_RemoveArticleByID() {
+    return __awaiter(this, void 0, void 0, function* () {
+      try {//Step: DEFINE client side validation rules.
+        //Step: DEFINE client side validation error messages.
+        //Step: VALIDATE client side error messages.
+        //Step: PERFORM task
+        //Step: RESPOND back
+      } catch (errors) {}
+    });
+  }
+
+}
+
+exports.default = Software_Programming_Helper_HandleArticleManagement_1_0; //END SERVICES
+//BEGIN SERVICE HELPERS
+///////////////////////////////////////////////////////
+//Helper Methods
+///////////////////////////////////////////////////////
+//END SERVICE HELPERS
+//export default class ArticlesService {
+//    async getArticles(url = `${config.apiUrl}/articles`) {
+//        const response = await Axios.get(url);
+//        return response.data.data;
+//    }
+//    async getUserArticles(token, url = `${config.apiUrl}/user/articles`) {
+//        const response = await Axios.get(url, {
+//            headers: {
+//                Authorization: `Bearer ${token}`,
+//            },
+//        });
+//        return response.data.data;
+//    }
+//    async deleteArticle(id, token) {
+//        await Axios.delete(`${config.apiUrl}/articles/${id}`, {
+//            headers: {
+//                Authorization: `Bearer ${token}`,
+//            },
+//        });
+//        return true;
+//    }
+//    async getArticle(slug) {
+//        const response = await Axios.get(`${config.apiUrl}/article/${slug}`);
+//        return response.data.data;
+//    }
+//    async getArticleCategories() {
+//        const categories = JSON.parse(localStorage.getItem('categories'));
+//        if (categories) {
+//            return categories;
+//        }
+//        const response = await Axios.get(`${config.apiUrl}/categories`);
+//        localStorage.setItem('categories', JSON.stringify(response.data.categories));
+//        return response.data.categories;
+//    }
+//    createArticle = async (data, token) => {
+//        if (!data.image) {
+//            return Promise.reject([{
+//                message: 'The image is required.',
+//            }]);
+//        }
+//        try {
+//            const rules = {
+//                title: 'required',
+//                content: 'required',
+//                category: 'required',
+//            };
+//            const messages = {
+//                required: 'The {{ field }} is required.',
+//            };
+//            await validateAll(data, rules, messages);
+//            const image = await this.uploadToCloudinary(data.image);
+//            const response = await Axios.post(`${config.apiUrl}/articles`, {
+//                title: data.title,
+//                content: data.content,
+//                category_id: data.category,
+//                imageUrl: image.secure_url,
+//            }, {
+//                    headers: {
+//                        Authorization: `Bearer ${token}`,
+//                    },
+//                });
+//            return response.data;
+//        } catch (errors) {
+//            if (errors.response) {
+//                return Promise.reject(errors.response.data);
+//            }
+//            return Promise.reject(errors);
+//        }
+//    }
+//    updateArticle = async (data, article, token) => {
+//        let image;
+//        if (data.image) {
+//            image = await this.uploadToCloudinary(data.image);
+//        }
+//        try {
+//            const rules = {
+//                title: 'required',
+//                content: 'required',
+//                category: 'required',
+//            };
+//            const messages = {
+//                required: 'The {{ field }} is required.',
+//            };
+//            await validateAll(data, rules, messages);
+//            const response = await Axios.put(`${config.apiUrl}/articles/${article.id}`, {
+//                title: data.title,
+//                content: data.content,
+//                category_id: data.category,
+//                imageUrl: image ? image.secure_url : article.imageUrl,
+//            }, {
+//                    headers: {
+//                        Authorization: `Bearer ${token}`,
+//                    },
+//                });
+//            return response.data;
+//        } catch (errors) {
+//            if (errors.response) {
+//                return Promise.reject(errors.response.data);
+//            }
+//            return Promise.reject(errors);
+//        }
+//    }
+//    async uploadToCloudinary(image) {
+//        const form = new FormData();
+//        form.append('file', image);
+//        form.append('upload_preset', 'g5ziunzg');
+//        const response = await Axios.post('https://api.cloudinary.com/v1_1/bahdcoder/image/upload', form);
+//        return response.data;
+//    }
+//}
+
+/***/ }),
+
+/***/ "./source/7. Helpers/Internet and Businesses Online/Blogging/State – Internet and Businesses Online – Demo Blog, Blogging - 1_0.tsx":
+/*!******************************************************************************************************************************************!*\
+  !*** ./source/7. Helpers/Internet and Businesses Online/Blogging/State – Internet and Businesses Online – Demo Blog, Blogging - 1_0.tsx ***!
+  \******************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+}); //IMPORT EXTRA STUFF
+
+const redux_1 = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
+
+const redux_devtools_extension_1 = __webpack_require__(/*! redux-devtools-extension */ "./node_modules/redux-devtools-extension/index.js");
+
+const ScreenFactory_1 = __webpack_require__(/*! ../../../2. Screens/Internet and Businesses Online/Web Development/ScreenFactory */ "./source/2. Screens/Internet and Businesses Online/Web Development/ScreenFactory.tsx"); //IMPORT STATE HELPERS
+
+
+const Service___Internet_and_Businesses_Online___Article_Management__Blogging___1_0_1 = __webpack_require__(/*! ../../../7. Helpers/Internet and Businesses Online/Blogging/Service – Internet and Businesses Online - Article Management, Blogging – 1_0 */ "./source/7. Helpers/Internet and Businesses Online/Blogging/Service – Internet and Businesses Online - Article Management, Blogging – 1_0.tsx"); //SET TARGET MARKET INFORMATION
+
+
+const marketMainCategory = "Internet and Businesses Online";
+const marketNicheCategory = "Blogging"; //BEGIN STATE
+
+class Software_Programming_Helper_HandleBlogManagementState_1_0 {
+  ///////////////////////////////////////////////////////
+  //Class Setup
+  ///////////////////////////////////////////////////////
+  constructor(props) {
+    ///////////////////////////////////////////////////////
+    //State Handler Helpers
+    ///////////////////////////////////////////////////////
+    this.Software_Programming_Helper_HandleStateStore = (oldState, action) => {
+      if (action.type == "navigationLinks") {
+        return oldState;
+      }
+
+      return oldState;
+    }; ///////////////////////////////////////////////////////
+    //Standalone Helpers
+    ///////////////////////////////////////////////////////
+
+
+    this.Software_Programming_Helper_HandleReadMockLinks = {
+      navigationLinks: [{
+        name: "Home",
+        link: "/",
+        renderID: ScreenFactory_1.ScreenNameEnum.Screen_Internet_And_Businesses_Online_Demo_Blog_Home_Blogging_1_0
+      }, {
+        name: "About",
+        link: "/About",
+        renderID: ScreenFactory_1.ScreenNameEnum.Screen_Internet_And_Businesses_Online_Demo_Blog_About_Blogging_1_0
+      }, {
+        name: "Contact",
+        link: "/Contact",
+        renderID: ScreenFactory_1.ScreenNameEnum.Screen_Internet_And_Businesses_Online_Demo_Blog_Contact_Blogging_1_0
+      }]
+    };
+    this.initialState = this.Software_Programming_Helper_HandleReadMockLinks;
+    this.stateStore = redux_1.createStore(this.Software_Programming_Helper_HandleStateStore, this.initialState, redux_devtools_extension_1.composeWithDevTools(redux_1.applyMiddleware())); //WIRE EVENTS
+
+    this.ArticleService = new Service___Internet_and_Businesses_Online___Article_Management__Blogging___1_0_1.default(); //SET DEFAULTS
+  }
+
+  Software_Programming_Helper_HandleStateDispatch(state) {
+    this.stateStore.dispatch(state);
+  }
+
+}
+
+Software_Programming_Helper_HandleBlogManagementState_1_0.Software_Programming_Helper_HandleStateConnection = state => {
+  return {
+    navigationLinks: state.navigationLinks
+  };
+};
+
+exports.default = Software_Programming_Helper_HandleBlogManagementState_1_0; //END STATE
 
 /***/ }),
 

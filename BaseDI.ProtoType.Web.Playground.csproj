@@ -44,8 +44,8 @@
     <None Remove="Source\3. Templates\Internet and Businesses Online\Blogging\Template – Internet and Businesses Online – Demo Blog _ Home, Blogging – 1_0.tsx" />
     <None Remove="Source\3. Templates\Internet and Businesses Online\Web Development\TemplateFactory.tsx" />
     <None Remove="Source\4. Pieces\Internet and Businesses Online\Web Development\PieceFactory.tsx" />
-    <None Remove="Source\7. Helpers\Computers and Technology\Programming\Service – Internet and Businesses Online - Article Management, Blogging – 1_0.tsx" />
     <None Remove="Source\7. Helpers\Computers and Technology\Programming\ServiceFactory.tsx" />
+    <None Remove="Source\7. Helpers\Internet and Businesses Online\Blogging\State – Internet and Businesses Online – Demo Blog, Blogging - 1_0.tsx" />
     <None Remove="Source\7. Helpers\Internet and Businesses Online\Web Development\Snippet DIV Containers.tsx" />
     <None Remove="Source\BaseDISnippet_TABLE.tsx" />
     <None Remove="Source\Global.tsx" />
@@ -70,8 +70,8 @@
     <TypeScriptCompile Include="Source\3. Templates\Internet and Businesses Online\Blogging\Template – Internet and Businesses Online – Demo Blog _ Home, Blogging – 1_0.tsx" />
     <TypeScriptCompile Include="Source\3. Templates\Internet and Businesses Online\Web Development\TemplateFactory.tsx" />
     <TypeScriptCompile Include="Source\4. Pieces\Internet and Businesses Online\Web Development\PieceFactory.tsx" />
-    <TypeScriptCompile Include="Source\7. Helpers\Computers and Technology\Programming\Service – Internet and Businesses Online - Article Management, Blogging – 1_0.tsx" />
     <TypeScriptCompile Include="Source\7. Helpers\Computers and Technology\Programming\ServiceFactory.tsx" />
+    <TypeScriptCompile Include="Source\7. Helpers\Internet and Businesses Online\Blogging\State – Internet and Businesses Online – Demo Blog, Blogging - 1_0.tsx" />
     <TypeScriptCompile Include="Source\7. Helpers\Internet and Businesses Online\Web Development\Snippet DIV Containers.tsx" />
     <TypeScriptCompile Include="Source\Global.tsx" />
     <TypeScriptCompile Include="Source\Index.tsx" />
