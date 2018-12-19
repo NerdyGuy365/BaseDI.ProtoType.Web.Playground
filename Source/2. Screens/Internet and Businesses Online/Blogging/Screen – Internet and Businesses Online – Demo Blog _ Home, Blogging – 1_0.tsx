@@ -9,7 +9,7 @@ import * as React from 'react';
 
 //IMPORT SCREEN SPECIFIC COMPONENTS
 import { Global, IGlobalContainerProps, IGlobalHeaderProps, IGlobalBodyProps, IGlobalFooterProps } from '../../../Global';
-import { default as TemplateFactory, TemplateNameEnum } from '../../../3. Templates/Internet and Businesses Online/Web Development/TemplateFactory';
+import { default as TemplateFactory, TemplateNameEnum } from '../../../3. Templates/Computers and Technology/Programming/TemplateFactory';
 
 //BEGIN CONTAINER - 1-1
 class Container_1_1 extends React.Component<IGlobalContainerProps, any>{

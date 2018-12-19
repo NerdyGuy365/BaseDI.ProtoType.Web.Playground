@@ -1,7 +1,7 @@
 ﻿//IMPORT APPLICATION COMPONENTS
 import { Global, IGlobalContainerProps, IGlobalHeaderProps, IGlobalBodyProps, IGlobalFooterProps } from '../../../Global';
-import { default as Application_Internet_And_Businesses_Online_Demo_Blog_Blogging_1_0 } from '../Blogging/Application – Internet and Businesses Online – Demo Blog, Blogging - 1_0';
-import { default as Application_Internet_And_Businesses_Online_Demo_Blog_Site_Promotion_1_0 } from '../Site Promotion/Application – Internet and Businesses Online – Demo Blog, Site Promotion - 1_0';
+import { default as Application_Internet_And_Businesses_Online_Demo_Blog_Blogging_1_0 } from '../../Internet and Businesses Online/Blogging/Application – Internet and Businesses Online – Demo Blog, Blogging - 1_0';
+import { default as Application_Internet_And_Businesses_Online_Demo_Blog_Site_Promotion_1_0 } from '../../Internet and Businesses Online/Site Promotion/Application – Internet and Businesses Online – Demo Blog, Site Promotion - 1_0';
 
 //DECLARE FACTORY ENUM
 enum ApplicationNameEnum {
