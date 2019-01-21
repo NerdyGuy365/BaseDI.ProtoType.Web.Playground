@@ -1,0 +1,41 @@
+﻿/*---------------------------------------------*/
+/*-CONTAINERS ---------------------------------*/
+/*---------------------------------------------*/
+.container-fluid-padding-extension-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container-fluid-padding-extension-1 {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+
+/*---------------------------------------------*/
+/*-ROWS ---------------------------------*/
+/*---------------------------------------------*/
+.row-margin-extension-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.row-width-extension-100 {
+    width: 100%;
+}
+
+
+/*---------------------------------------------*/
+/*-COLUMNS ---------------------------------*/
+/*---------------------------------------------*/
+.col-padding-extension-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.col-padding-extension-1 {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+.col-width-extension-100 {
+    width: 100%;
+}

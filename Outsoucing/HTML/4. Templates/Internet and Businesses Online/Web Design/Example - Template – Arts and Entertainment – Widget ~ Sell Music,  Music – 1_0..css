@@ -1,0 +1,548 @@
+﻿/*!
+ * BaseDI v1.0.0 (https://basedi.net/) <---- COMING SOON
+ * Copyright 2009-2019 Richardson Technology Group
+ * Copyright 2018-2019 Nerdy Group Affiliates
+ * Licensed under MIT ()
+*/
+
+/*********************************************************************/
+/*PAGE LEVEL STYLES                                                  */
+/*********************************************************************/
+
+
+
+
+
+
+html {
+    /* define typeface style and dimensions */
+    font-size: 62.5%;
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+
+body 
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+    margin: 0;
+    padding: 0; 
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************************/
+/*HEADER STYLES*/
+/*********************************************************************/
+
+
+
+
+
+
+/*1. HEADER STRUCTURE*/
+.header-cabinet-shelf
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+.header-cabinet-row-1
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+.header-cabinet-row-1-column-1
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+    display:inline-block;
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+.header-cabinet-row-2
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+.header-cabinet-row-2-column-1
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+    display:inline-block;
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+
+
+
+
+
+/*2. HEADER CONTENT*/
+.header-cabinet-item-container-1
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+.header-cabinet-item-container-2
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************************/
+/*BODY STYLES*/
+/*********************************************************************/
+
+
+
+
+
+
+/*1. BODY STRUCTURE*/
+.body-cabinet-shelf
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+.body-cabinet-row-1
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+.body-cabinet-row-1-column-1
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+    display:inline-block;
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+.body-cabinet-row-1-column-2
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+    display:inline-block;
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+
+
+
+
+
+
+
+/*2. BODY CONTENT*/
+.body-cabinet-item-container-1
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+.body-cabinet-item-container-2
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************************/
+/*FOOTER STYLES*/
+/*********************************************************************/
+
+
+
+
+
+
+/*1. FOOTER STRUCTURE*/
+.footer-cabinet-shelf
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+.footer-cabinet-row-1
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+.footer-cabinet-row-1-column-1
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+    display:inline-block;
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+
+
+
+
+
+
+
+/*2. FOOTER CONTENT*/
+.footer-cabinet-item-container-1
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}

@@ -1,0 +1,55 @@
+﻿/*
+* BaseDI v1.0.0 (https://basedi.net/)
+* Copyright 2017-2018 The BaseDI Authors
+* Copyright 2011-2018 Richardson Technology Group, LLC.
+*/
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*---------------------------------------------*/
+/*-SHELVES ---------------------------------*/
+/*---------------------------------------------*/
+.basedi-shelf-show-grid-border {
+    border: solid;
+    border-color: red;
+    border-width: 1px;
+    margin-bottom: 2px;
+}
+
+/*---------------------------------------------*/
+/*-ROWS ---------------------------------*/
+/*---------------------------------------------*/
+.basedi-row-show-grid-border {
+    border: solid;
+    border-color: yellow;
+    border-width: 1px;
+}
+
+
+/*---------------------------------------------*/
+/*-COLUMNS ---------------------------------*/
+/*---------------------------------------------*/
+.basedi-column-show-grid-border {
+    border: solid;
+    border-color: green;
+    border-width: 1px;
+}
+
+
+/*---------------------------------------------*/
+/*-CONTAINERS ---------------------------------*/
+/*---------------------------------------------*/
+
+.basedi-container-show-grid-border {
+    border: solid;
+    border-color: brown;
+    border-width: 1px;
+}
+

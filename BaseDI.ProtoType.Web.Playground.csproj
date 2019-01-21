@@ -1,0 +1,136 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <IsPackable>false</IsPackable>
+    <SpaRoot>ClientApp\</SpaRoot>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.0-preview1-final" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.1.0-preview1-final" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.1.0-preview1-final" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Compile Remove="Source\ReactJS\5. Pieces\Internet and Businesses Online\Site Promotion\**" />
+    <Content Remove="$(SpaRoot)**" />
+    <Content Remove="Source\ReactJS\5. Pieces\Internet and Businesses Online\Site Promotion\**" />
+    <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Source\ReactJS\5. Pieces\Internet and Businesses Online\Site Promotion\**" />
+    <None Remove="Source\ReactJS\5. Pieces\Internet and Businesses Online\Site Promotion\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="BaseDISnippet.tsx" />
+    <None Remove="Source\ReactJS\2. Layouts\Computers and Technology\Programming\LayoutFactory.tsx" />
+    <None Remove="Source\ReactJS\2. Layouts\Internet and Businesses Online\Blogging\Layout – Internet and Businesses Online – Demo Blog, Blogging - 1_0.tsx" />
+    <None Remove="Source\ReactJS\1. Applications\Internet and Businesses Online\Blogging\Application – Internet and Businesses Online – Demo Blog, Blogging - 1_0.tsx" />
+    <None Remove="Source\ReactJS\3. Screens\Internet and Businesses Online\Blogging\Screen – Internet and Businesses Online – Demo Blog _ About, Blogging – 1_0.tsx" />
+    <None Remove="Source\ReactJS\3. Screens\Internet and Businesses Online\Blogging\Screen – Internet and Businesses Online – Demo Blog _ Contact, Blogging – 1_0.tsx" />
+    <None Remove="Source\ReactJS\3. Screens\Internet and Businesses Online\Blogging\Screen – Internet and Businesses Online – Demo Blog _ Home, Blogging – 1_0.tsx" />
+    <None Remove="Source\ReactJS\4. Templates\Internet and Businesses Online\Blogging\Template – Internet and Businesses Online – Demo Blog ~ About, Blogging – 1_0.tsx" />
+    <None Remove="Source\ReactJS\4. Templates\Internet and Businesses Online\Blogging\Template – Internet and Businesses Online – Demo Blog ~ Contact, Blogging – 1_0.tsx" />
+    <None Remove="Source\ReactJS\4. Templates\Internet and Businesses Online\Blogging\Template – Internet and Businesses Online – Demo Blog ~ Home, Blogging – 1_0.tsx" />
+    <None Remove="Source\ReactJS\8. Helpers\Computers and Technology\Programming\ServiceFactory.tsx" />
+    <None Remove="Source\ReactJS\8. Helpers\Internet and Businesses Online\Blogging\State – Internet and Businesses Online – Demo Blog, Blogging - 1_0.tsx" />
+    <None Remove="Source\ReactJS\8. Helpers\Internet and Businesses Online\Web Development\Snippet DIV Containers.tsx" />
+    <None Remove="Source\BaseDISnippet_TABLE.tsx" />
+    <None Remove="Source\Global.tsx" />
+    <None Remove="Source\ReactJS\5. Pieces\Piece_Self_Improvement-Organizing_Todo_Management_1_0.tsx" />
+    <None Remove="Source\ReactJS\3. Screens\Screen.tsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Deploy\" />
+    <Folder Include="Outsoucing\Shared\4. Templates\Internet and Businesses Online\Web Design\Audio\" />
+    <Folder Include="Outsoucing\Shared\4. Templates\Internet and Businesses Online\Web Design\Documents\" />
+    <Folder Include="Outsoucing\Shared\4. Templates\Internet and Businesses Online\Web Design\Images\" />
+    <Folder Include="Outsoucing\Shared\4. Templates\Internet and Businesses Online\Web Design\Videos\" />
+    <Folder Include="Outsoucing\Shared\2. Layouts\Internet and Businesses Online\Web Design\Audio\" />
+    <Folder Include="Outsoucing\Shared\2. Layouts\Internet and Businesses Online\Web Design\Documents\" />
+    <Folder Include="Outsoucing\Shared\2. Layouts\Internet and Businesses Online\Web Design\Images\" />
+    <Folder Include="Outsoucing\Shared\2. Layouts\Internet and Businesses Online\Web Design\Videos\" />
+    <Folder Include="Outsoucing\Task\" />
+    <Folder Include="Outsoucing\Shared\0. Duplicates\Internet and Businesses Online\Web Design\Audio\" />
+    <Folder Include="Outsoucing\Shared\0. Duplicates\Internet and Businesses Online\Web Design\Documents\" />
+    <Folder Include="Outsoucing\Shared\0. Duplicates\Internet and Businesses Online\Web Design\Videos\" />
+    <Folder Include="Source\AngularJS\7. Content\Internet and Businesses Online\Web Design\Audio\" />
+    <Folder Include="Source\AngularJS\7. Content\Internet and Businesses Online\Web Design\Documents\" />
+    <Folder Include="Source\AngularJS\7. Content\Internet and Businesses Online\Web Design\Fonts\" />
+    <Folder Include="Source\AngularJS\7. Content\Internet and Businesses Online\Web Design\Images\" />
+    <Folder Include="Source\AngularJS\7. Content\Internet and Businesses Online\Web Design\Videos\" />
+    <Folder Include="Source\HTML\4. Templates\Internet and Businesses Online\Ecommerce\" />
+    <Folder Include="Source\ReactJS\6. Styles\" />
+    <Folder Include="Source\ReactJS\7. Content\Internet and Businesses Online\Web Design\Audio\" />
+    <Folder Include="Source\ReactJS\7. Content\Internet and Businesses Online\Web Design\Documents\" />
+    <Folder Include="Source\ReactJS\7. Content\Internet and Businesses Online\Web Design\Fonts\" />
+    <Folder Include="Source\ReactJS\7. Content\Internet and Businesses Online\Web Design\Videos\" />
+    <Folder Include="Source\Shared\0. Duplicates\Internet and Businesses Online\Web Design\Audio\" />
+    <Folder Include="Source\Shared\0. Duplicates\Internet and Businesses Online\Web Design\Documents\" />
+    <Folder Include="Source\Shared\0. Duplicates\Internet and Businesses Online\Web Design\Videos\" />
+    <Folder Include="Source\VueJS\7. Content\Internet and Businesses Online\Web Design\Audio\" />
+    <Folder Include="Source\VueJS\7. Content\Internet and Businesses Online\Web Design\Documents\" />
+    <Folder Include="Source\VueJS\7. Content\Internet and Businesses Online\Web Design\Fonts\" />
+    <Folder Include="Source\VueJS\7. Content\Internet and Businesses Online\Web Design\Images\" />
+    <Folder Include="Source\VueJS\7. Content\Internet and Businesses Online\Web Design\Videos\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="Source\ReactJS\2. Layouts\Computers and Technology\Programming\LayoutFactory.tsx" />
+    <TypeScriptCompile Include="Source\ReactJS\2. Layouts\Internet and Businesses Online\Blogging\Layout – Internet and Businesses Online – Demo Blog, Blogging - 1_0.tsx" />
+    <TypeScriptCompile Include="Source\ReactJS\1. Applications\Internet and Businesses Online\Blogging\Application – Internet and Businesses Online – Demo Blog, Blogging - 1_0.tsx" />
+    <TypeScriptCompile Include="Source\ReactJS\1. Applications\Computers and Technology\Programming\ApplicationFactory.tsx" />
+    <TypeScriptCompile Include="Source\ReactJS\3. Screens\Internet and Businesses Online\Blogging\Screen – Internet and Businesses Online – Demo Blog _ About, Blogging – 1_0.tsx" />
+    <TypeScriptCompile Include="Source\ReactJS\3. Screens\Internet and Businesses Online\Blogging\Screen – Internet and Businesses Online – Demo Blog _ Contact, Blogging – 1_0.tsx" />
+    <TypeScriptCompile Include="Source\ReactJS\3. Screens\Internet and Businesses Online\Blogging\Screen – Internet and Businesses Online – Demo Blog _ Home, Blogging – 1_0.tsx" />
+    <TypeScriptCompile Include="Source\ReactJS\3. Screens\Computers and Technology\Programming\ScreenFactory.tsx" />
+    <TypeScriptCompile Include="Source\ReactJS\4. Templates\Internet and Businesses Online\Ecommerce\Template – Internet and Businesses Online – iTunes ~ Store, Ecommerce – 1_0.tsx" />
+    <TypeScriptCompile Include="Source\ReactJS\4. Templates\Internet and Businesses Online\Blogging\Template – Internet and Businesses Online – Demo Blog ~ About, Blogging – 1_0.tsx" />
+    <TypeScriptCompile Include="Source\ReactJS\4. Templates\Internet and Businesses Online\Blogging\Template – Internet and Businesses Online – Demo Blog ~ Contact, Blogging – 1_0.tsx" />
+    <TypeScriptCompile Include="Source\ReactJS\4. Templates\Internet and Businesses Online\Blogging\Template – Internet and Businesses Online – Demo Blog ~ Home, Blogging – 1_0.tsx" />
+    <TypeScriptCompile Include="Source\ReactJS\4. Templates\Computers and Technology\Programming\TemplateFactory.tsx" />
+    <TypeScriptCompile Include="Source\ReactJS\5. Pieces\Computers and Technology\Programming\PieceFactory.tsx" />
+    <TypeScriptCompile Include="Source\ReactJS\8. Helpers\Computers and Technology\Programming\ServiceFactory.tsx" />
+    <TypeScriptCompile Include="Source\ReactJS\8. Helpers\Internet and Businesses Online\Blogging\State – Internet and Businesses Online – Demo Blog, Blogging - 1_0.tsx" />
+    <TypeScriptCompile Include="Source\ReactJS\8. Helpers\Internet and Businesses Online\Web Development\Snippet DIV Containers.tsx" />
+    <TypeScriptCompile Include="Source\ReactJS\Global.tsx" />
+    <TypeScriptCompile Include="Source\ReactJS\Index.tsx" />
+  </ItemGroup>
+
+  <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
+    <!-- Ensure Node.js is installed -->
+    <Exec Command="node --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+    <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+  </Target>
+
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build" />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="$(SpaRoot)build\**; $(SpaRoot)build-ssr\**" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+</Project>
