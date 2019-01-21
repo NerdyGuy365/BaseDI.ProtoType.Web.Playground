@@ -19,6 +19,7 @@
     /* define layout flow */
 
     /* define layout positioning */
+    vertical-align: top;
 
     /* define border, margins and padding */  
     border: 1px solid #ff0000;
@@ -39,8 +40,10 @@
     /* define size deminsions */
 
     /* define layout flow */
+    display: block;
 
     /* define layout positioning */
+    vertical-align: top;
 
     /* define border, margins and padding */  
     border: 1px solid #ffff00;
@@ -64,9 +67,10 @@
     display: inline-block;
 
     /* define layout positioning */
+    vertical-align: top;
 
     /* define border, margins and padding */  
-    border: 1px solid #538135;
+    border: 1px solid black;
 
     /* define controls, objects & shapes */
     
@@ -75,7 +79,7 @@
     /* define animations interactions */
 }
 
-.basedi-container 
+.basedi-item 
 {
     /* define typeface style and dimensions */
 
@@ -84,11 +88,13 @@
     /* define size deminsions */
 
     /* define layout flow */
+    display: block;
 
     /* define layout positioning */
+    vertical-align: top;
 
     /* define border, margins and padding */  
-    border: 1px solid #c55a11;
+    border: 1px solid #17c2ed;
 
     /* define controls, objects & shapes */
     
@@ -97,7 +103,7 @@
     /* define animations interactions */
 }
 
-.basedi-ingredient 
+.basedi-part 
 {
     /* define typeface style and dimensions */
 
@@ -106,11 +112,13 @@
     /* define size deminsions */
 
     /* define layout flow */
+    display: block;
 
     /* define layout positioning */
+    vertical-align: top;
 
     /* define border, margins and padding */  
-    border: 1px solid #0070c0;
+    border: 1px solid #808080;
 
     /* define controls, objects & shapes */
     

@@ -87,6 +87,56 @@ body
 
 
 /*********************************************************************/
+/*SHELF STYLES*/
+/*********************************************************************/
+.layout-cabinet-shelf
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+   
+    /* define layout flow */
+    display: block;
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************************/
 /*HEADER STYLES*/
 /*********************************************************************/
 
@@ -124,10 +174,11 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
-    min-height:40px;
-    min-width: 100%;
+    height: 100%;
+    width: 99.6%;
 
     /* define layout flow */
+    display: flex;
 
     /* define layout positioning */
 
@@ -146,6 +197,8 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
+    height: 100%;
+    min-width: 99.8%;
 
     /* define layout flow */
     display:inline-block;
@@ -212,15 +265,14 @@ body
 .header-cabinet-item-container-1
 {
     /* define typeface style and dimensions */
-    font-size:1.5rem;
 
     /* define content & color scheme */
 
-    /* define size deminsions */
-    min-width                                                                                                                                                                                                    : 100%;
+    /* define size deminsions */   
+    height: 100%;
+    width: auto;
 
     /* define layout flow */
-    display:inline-block;
 
     /* define layout positioning */
 
@@ -232,7 +284,6 @@ body
 
     /* define animations interactions */
 }
-
 .header-cabinet-item-container-2
 {
     /* define typeface style and dimensions */
@@ -240,6 +291,7 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
+    width: auto;
 
     /* define layout flow */
 
@@ -318,10 +370,11 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
-    min-height:589px;
-    min-width:1418px;
+    height: 100%;
+    width: 99.6%;
 
     /* define layout flow */
+    display: flex;
 
     /* define layout positioning */
 
@@ -340,8 +393,8 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
-    min-height:589px;
-    min-width:1418px;
+    min-height: 300px;
+    min-width: 74.8%;
 
     /* define layout flow */
     display:inline-block;
@@ -363,6 +416,8 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
+    min-height: 300px;
+    min-width: 24.65%;
 
     /* define layout flow */
     display:inline-block;
@@ -380,11 +435,6 @@ body
 
 
 
-
-
-
-
-
 /*2. BODY CONTENT*/
 .body-cabinet-item-container-1
 {
@@ -393,12 +443,11 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
-    min-height:655px;
+    min-height: 300px;
 
     /* define layout flow */
 
     /* define layout positioning */
-    vertical-align:top;
 
     /* define border, margins and padding */  
    
@@ -408,7 +457,6 @@ body
 
     /* define animations interactions */
 }
-
 .body-cabinet-item-container-2
 {
     /* define typeface style and dimensions */
@@ -416,8 +464,7 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
-    min-height:655px;
-    min-width:470px;
+    min-height: 300px;
 
     /* define layout flow */
 
@@ -497,8 +544,11 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
+    height: 100%;
+    width: 99.6%;
 
     /* define layout flow */
+    display: flex;
 
     /* define layout positioning */
 
@@ -517,7 +567,6 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
-    min-height:200px;
 
     /* define layout flow */
     display:inline-block;
@@ -548,10 +597,12 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
+    width: 100%;
 
     /* define layout flow */
 
     /* define layout positioning */
+    vertical-align:top;
 
     /* define border, margins and padding */  
    

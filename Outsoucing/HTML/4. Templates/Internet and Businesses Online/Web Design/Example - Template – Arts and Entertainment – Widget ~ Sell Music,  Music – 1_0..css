@@ -87,6 +87,57 @@ body
 
 
 /*********************************************************************/
+/*SHELF STYLES*/
+/*********************************************************************/
+.template-cabinet-shelf
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+   
+    /* define layout flow */
+    display: block;
+
+    /* define layout positioning */
+
+    /* define border, margins and padding */  
+   
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************************/
 /*HEADER STYLES*/
 /*********************************************************************/
 
@@ -227,7 +278,6 @@ body
 
     /* define animations interactions */
 }
-
 .header-cabinet-item-container-2
 {
     /* define typeface style and dimensions */
@@ -397,7 +447,6 @@ body
 
     /* define animations interactions */
 }
-
 .body-cabinet-item-container-2
 {
     /* define typeface style and dimensions */
