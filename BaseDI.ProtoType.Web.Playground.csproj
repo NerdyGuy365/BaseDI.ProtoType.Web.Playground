@@ -61,6 +61,9 @@
     <Folder Include="Outsoucing\Shared\2. Layouts\Internet and Businesses Online\Web Design\Documents\" />
     <Folder Include="Outsoucing\Shared\2. Layouts\Internet and Businesses Online\Web Design\Images\" />
     <Folder Include="Outsoucing\Shared\2. Layouts\Internet and Businesses Online\Web Design\Videos\" />
+    <Folder Include="Outsoucing\Shared\5. Pieces\Internet and Businesses Online\Web Design\Audio\" />
+    <Folder Include="Outsoucing\Shared\5. Pieces\Internet and Businesses Online\Web Design\Documents\" />
+    <Folder Include="Outsoucing\Shared\5. Pieces\Internet and Businesses Online\Web Design\Videos\" />
     <Folder Include="Outsoucing\Task\" />
     <Folder Include="Outsoucing\Shared\0. Duplicates\Internet and Businesses Online\Web Design\Audio\" />
     <Folder Include="Outsoucing\Shared\0. Duplicates\Internet and Businesses Online\Web Design\Documents\" />

@@ -4,7 +4,6 @@
  * Copyright 2018-2019 Nerdy Group Affiliates
  * Licensed under MIT ()
 */
-
 /*********************************************************************/
 /*PAGE LEVEL STYLES                                                  */
 /*********************************************************************/
@@ -87,62 +86,7 @@ body
 
 
 /*********************************************************************/
-/*SHELF STYLES*/
-/*********************************************************************/
-.layout-cabinet-shelf
-{
-    /* define typeface style and dimensions */
-
-    /* define content & color scheme */
-
-    /* define size deminsions */
-    height: 100%;
-    width: 100%;
-   
-    /* define layout flow */
-    display: flex;
-
-    /* define layout positioning */    
-    flex-direction: column;
-    
-    position: fixed;
-
-    /* define border, margins and padding */  
-   
-    /* define controls, objects & shapes */
-    
-    /* define user device interactions */
-
-    /* define animations interactions */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*********************************************************************/
-/*HEADER STYLES*/
+/*NO HEADER STYLES USED FOR TEMPLATE */
 /*********************************************************************/
 
 
@@ -158,14 +102,10 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
-    height: 3%;
-    width: 100%;
 
     /* define layout flow */
-    display: flex;
 
     /* define layout positioning */    
-    flex-direction: column;
 
     /* define border, margins and padding */  
    
@@ -183,14 +123,11 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
-    height: 100%;
-    width: 100%;
 
     /* define layout flow */
-    display: flex;
 
     /* define layout positioning */    
-    flex-direction: column;
+
 
     /* define border, margins and padding */  
    
@@ -207,14 +144,10 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
-    height: 100%;
-    width: 100%;
 
     /* define layout flow */
-    display: flex;
 
     /* define layout positioning */    
-    flex-direction: column;
 
     /* define border, margins and padding */  
    
@@ -240,36 +173,10 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
-    height: 100%;
-    width: 100%;
 
     /* define layout flow */
-    display: flex;
 
     /* define layout positioning */    
-    flex-direction: column;
-
-    /* define border, margins and padding */  
-   
-    /* define controls, objects & shapes */
-    
-    /* define user device interactions */
-
-    /* define animations interactions */
-}
-.header-cabinet-item-container-1 #part-6
-{
-    /* define typeface style and dimensions */
-    font-size: 1.8rem;
-
-    /* define content & color scheme */
-
-    /* define size deminsions */
-
-    /* define layout flow */
-
-    /* define layout positioning */  
-    text-align:center;
 
     /* define border, margins and padding */  
    
@@ -322,7 +229,7 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
-    height: 87%;
+    height: 99.5%;
     width: 100%;
 
     /* define layout flow */
@@ -330,7 +237,7 @@ body
 
     /* define layout positioning */    
     flex-direction: column;
-
+    
     /* define border, margins and padding */  
    
     /* define controls, objects & shapes */
@@ -372,7 +279,7 @@ body
 
     /* define size deminsions */
     height: 99.5%;
-    width: 100%;
+    width: 75%;
 
     /* define layout flow */
     display: inline-block;
@@ -387,7 +294,6 @@ body
 
     /* define animations interactions */
 }
-
 
 
 
@@ -414,7 +320,7 @@ body
 
     /* define animations interactions */
 }
-.body-cabinet-item-container-1 #part-6
+.body-cabinet-item-container-1 #container-1-part-3
 {
     /* define typeface style and dimensions */
     font-size: 2rem;
@@ -426,7 +332,6 @@ body
     /* define layout flow */
 
     /* define layout positioning */    
-    text-align:center;
 
     /* define border, margins and padding */  
    
@@ -437,28 +342,6 @@ body
     /* define animations interactions */
 }
 
-.body-cabinet-item-container-2
-{
-    /* define typeface style and dimensions */
-
-    /* define content & color scheme */
-
-    /* define size deminsions */
-    height: 99.5%;
-    width: 100%;
-
-    /* define layout flow */
-
-    /* define layout positioning */    
-
-    /* define border, margins and padding */  
-   
-    /* define controls, objects & shapes */
-    
-    /* define user device interactions */
-
-    /* define animations interactions */
-}
 
 
 
@@ -503,14 +386,10 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
-    height: 9%;
-    width: 100%;
 
     /* define layout flow */
-    display: flex;
 
     /* define layout positioning */    
-    flex-direction: column;
 
     /* define border, margins and padding */  
    
@@ -528,14 +407,10 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
-    height: 98%;
-    width: 100%;
 
     /* define layout flow */
-    display: flex;
 
     /* define layout positioning */    
-    flex-direction: row;
 
     /* define border, margins and padding */  
    
@@ -552,11 +427,8 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
-    height: 98%;
-    width: 100%;
 
     /* define layout flow */
-    display: inline-block;
 
     /* define layout positioning */
 
@@ -584,34 +456,10 @@ body
     /* define content & color scheme */
 
     /* define size deminsions */
-    height: 100%;
-    width: 100%;
 
     /* define layout flow */
 
     /* define layout positioning */
-
-    /* define border, margins and padding */  
-   
-    /* define controls, objects & shapes */
-    
-    /* define user device interactions */
-
-    /* define animations interactions */
-}
-.footer-cabinet-item-container-1 #part-6
-{
-    /* define typeface style and dimensions */
-    font-size: 1.8rem;
-
-    /* define content & color scheme */
-
-    /* define size deminsions */
-
-    /* define layout flow */
-
-    /* define layout positioning */  
-    text-align:center;
 
     /* define border, margins and padding */  
    
