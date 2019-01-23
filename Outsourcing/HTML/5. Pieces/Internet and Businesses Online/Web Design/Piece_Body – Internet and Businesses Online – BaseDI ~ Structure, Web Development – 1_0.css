@@ -1,0 +1,131 @@
+﻿/*!
+ * BaseDI v1.0.0 (https://basedi.net/) <---- COMING SOON
+ * Copyright 2009-2019 Richardson Technology Group
+ * Copyright 2018-2019 Nerdy Group Affiliates
+ * Licensed under MIT ()
+*/
+
+/*********************************************************************/
+/*START OF BASEDI STYLES                                             */
+/*********************************************************************/
+.basedi-shelf
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+
+    /* define layout positioning */
+    vertical-align: top;
+
+    /* define border, margins and padding */  
+    border: 1px solid #ff0000;
+
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+.basedi-row 
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+    display: block;
+
+    /* define layout positioning */
+    vertical-align: top;
+
+    /* define border, margins and padding */  
+    border: 1px solid #ffff00;
+
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+.basedi-column 
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+    display: inline-block;
+
+    /* define layout positioning */
+    vertical-align: top;
+
+    /* define border, margins and padding */  
+    border: 1px solid black;
+
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+.basedi-item 
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+    display: block;
+
+    /* define layout positioning */
+    vertical-align: top;
+
+    /* define border, margins and padding */  
+    border: 1px solid #17c2ed;
+
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+
+.basedi-part 
+{
+    /* define typeface style and dimensions */
+
+    /* define content & color scheme */
+
+    /* define size deminsions */
+
+    /* define layout flow */
+    display: block;
+
+    /* define layout positioning */
+    vertical-align: top;
+
+    /* define border, margins and padding */  
+    border: 1px solid #808080;
+
+    /* define controls, objects & shapes */
+    
+    /* define user device interactions */
+
+    /* define animations interactions */
+}
+/*********************************************************************/
+/*END OF BASEDI STYLES                                             */
+/*********************************************************************/

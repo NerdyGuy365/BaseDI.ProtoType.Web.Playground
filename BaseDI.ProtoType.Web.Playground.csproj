@@ -53,21 +53,21 @@
 
   <ItemGroup>
     <Folder Include="Deploy\" />
-    <Folder Include="Outsoucing\Shared\4. Templates\Internet and Businesses Online\Web Design\Audio\" />
-    <Folder Include="Outsoucing\Shared\4. Templates\Internet and Businesses Online\Web Design\Documents\" />
-    <Folder Include="Outsoucing\Shared\4. Templates\Internet and Businesses Online\Web Design\Images\" />
-    <Folder Include="Outsoucing\Shared\4. Templates\Internet and Businesses Online\Web Design\Videos\" />
-    <Folder Include="Outsoucing\Shared\2. Layouts\Internet and Businesses Online\Web Design\Audio\" />
-    <Folder Include="Outsoucing\Shared\2. Layouts\Internet and Businesses Online\Web Design\Documents\" />
-    <Folder Include="Outsoucing\Shared\2. Layouts\Internet and Businesses Online\Web Design\Images\" />
-    <Folder Include="Outsoucing\Shared\2. Layouts\Internet and Businesses Online\Web Design\Videos\" />
-    <Folder Include="Outsoucing\Shared\5. Pieces\Internet and Businesses Online\Web Design\Audio\" />
-    <Folder Include="Outsoucing\Shared\5. Pieces\Internet and Businesses Online\Web Design\Documents\" />
-    <Folder Include="Outsoucing\Shared\5. Pieces\Internet and Businesses Online\Web Design\Videos\" />
-    <Folder Include="Outsoucing\Task\" />
-    <Folder Include="Outsoucing\Shared\0. Duplicates\Internet and Businesses Online\Web Design\Audio\" />
-    <Folder Include="Outsoucing\Shared\0. Duplicates\Internet and Businesses Online\Web Design\Documents\" />
-    <Folder Include="Outsoucing\Shared\0. Duplicates\Internet and Businesses Online\Web Design\Videos\" />
+    <Folder Include="Outsourcing\Shared\4. Templates\Internet and Businesses Online\Web Design\Audio\" />
+    <Folder Include="Outsourcing\Shared\4. Templates\Internet and Businesses Online\Web Design\Documents\" />
+    <Folder Include="Outsourcing\Shared\4. Templates\Internet and Businesses Online\Web Design\Images\" />
+    <Folder Include="Outsourcing\Shared\4. Templates\Internet and Businesses Online\Web Design\Videos\" />
+    <Folder Include="Outsourcing\Shared\2. Layouts\Internet and Businesses Online\Web Design\Audio\" />
+    <Folder Include="Outsourcing\Shared\2. Layouts\Internet and Businesses Online\Web Design\Documents\" />
+    <Folder Include="Outsourcing\Shared\2. Layouts\Internet and Businesses Online\Web Design\Images\" />
+    <Folder Include="Outsourcing\Shared\2. Layouts\Internet and Businesses Online\Web Design\Videos\" />
+    <Folder Include="Outsourcing\Shared\5. Pieces\Internet and Businesses Online\Web Design\Audio\" />
+    <Folder Include="Outsourcing\Shared\5. Pieces\Internet and Businesses Online\Web Design\Documents\" />
+    <Folder Include="Outsourcing\Shared\5. Pieces\Internet and Businesses Online\Web Design\Videos\" />
+    <Folder Include="Outsourcing\Task\" />
+    <Folder Include="Outsourcing\Shared\0. Duplicates\Internet and Businesses Online\Web Design\Audio\" />
+    <Folder Include="Outsourcing\Shared\0. Duplicates\Internet and Businesses Online\Web Design\Documents\" />
+    <Folder Include="Outsourcing\Shared\0. Duplicates\Internet and Businesses Online\Web Design\Videos\" />
     <Folder Include="Source\AngularJS\7. Content\Internet and Businesses Online\Web Design\Audio\" />
     <Folder Include="Source\AngularJS\7. Content\Internet and Businesses Online\Web Design\Documents\" />
     <Folder Include="Source\AngularJS\7. Content\Internet and Businesses Online\Web Design\Fonts\" />
